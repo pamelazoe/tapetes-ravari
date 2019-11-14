@@ -3,6 +3,13 @@ import { Row, Col, Icon } from 'antd';
 
 const TopBanner = ({ phone, email }) => (
 <div className="bannerTop">
+
+  {/* <Col span={3}></Col>
+  <Col span={9}></Col>
+  <Col span={9}>
+
+  </Col>
+  <Col span={3}></Col> */}
 <Row type="flex" justify="center" align="middle" style={{width:"100%", height:"35px", backgroundColor:"black"}}>
   <Col span={12} md={12} lg={18} xl={18} xxl={18}>
     <Row type="flex" justify="end" align="bottom" style={{height:"100%"}}>
@@ -16,7 +23,7 @@ const TopBanner = ({ phone, email }) => (
       </div>
       </div>
       </Col>
-      <Col xs={3} md={6} lg={4}>
+      <Col xs={3} md={6} lg={7}>
       <div className="join2" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
       <Icon type="mail" className="show-desktop-hide-mobile" style={{color:"white"}} />
       <div className="show-desktop-hide-mobile" style={{height:"100%", display:"flex", alignItems:"center", marginLeft:"0.4rem"}}>

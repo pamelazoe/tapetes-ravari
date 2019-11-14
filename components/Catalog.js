@@ -24,8 +24,6 @@ const Catalog = () => (
         <style jsx>{`
         img {
             -webkit-filter: brightness(100%);
-            font-family: arial black;
-            font-size: 100px;
             -webkit-transition: opacity 1s ease-in-out;
             -moz-transition: opacity 1s ease-in-out;
             -ms-transition: opacity 1s ease-in-out;

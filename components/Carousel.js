@@ -56,13 +56,10 @@ class Slides extends Component {
         .ant-carousel .slick-dots li button:hover, .ant-carousel .slick-dots li button:focus {
           margin:15px;
         }
-        a:visited, a:hover, a:active, a:focus {
-          text-decoration: none;
-        }
-        // a {
-        //   color: #000;
-        //   padding: 5px 10px;
+        // a:visited, a:hover, a:active, a:focus {
+        //   text-decoration: none;
         // }
+   
         .ant-carousel img {
           opacity:.5
         }

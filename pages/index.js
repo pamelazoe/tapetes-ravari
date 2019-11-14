@@ -29,7 +29,6 @@ const Home = () => (
  </MyLayout>
  <BackTop/>
  <style jsx>{`
-     font-family: 'Roboto Condensed', sans-serif;
       `}</style>
 
  </div>

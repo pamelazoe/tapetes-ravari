@@ -75,12 +75,12 @@ const Nav = ({ home, about, services, contact, children }) => (
       </Col>
       <Col span={9} style={{display:"flex", justifyContent:"center", background:"white"}}>
         <Menu mode="horizontal" style={{marginTop:"20px",marginBottom:"20px", display:"flex", justifyContent:"center"}}>
-        <Menu.Item key="home" >
+        <Menu.Item key="home" style={{outline:"0"}}>
           {/* <a href="/" target="_blank" rel="noopener noreferrer"></a> */}
-          <Link href="/">
-            <a>
+          <Link href="/" style={{outline:"0"}}>
+            
               {home.toUpperCase()}
-            </a>
+         
           </Link>
         </Menu.Item>
         <Menu.Item key="about">
@@ -115,37 +115,20 @@ const Nav = ({ home, about, services, contact, children }) => (
     </Row>
     </Affix>
     <style global jsx>{`
-        .ant-menu-item {
-          display:flex;
-          justify-content:center;
-        }
-        a {
-          height:100%;
-        }
-        li{
-          display:flex;
-          justify-content:center;
-        }
-        .ant-menu-horizontal{
+             .ant-menu-horizontal{
           border-bottom:none;
-        }
-        .ant-menu-item-active::selection{
-          background:red;
-          color:red;
         }
         .ant-menu-horizontal > .ant-menu-item > a:hover {
           color:black;
-          font-weight:bold;
           border:none;
           text-decoration:none;
         }
         .ant-menu-horizontal > .ant-menu-item > a:active {
           color:black;
-          font-weight:bold;
-          border:solid;
         }
-         a:hover{
-          text-decoration:none;
+        .ant-menu-item-active {
+          border-bottom: 2px solid transparent !important;
+          color: inherit !important;
         }
       `}</style>
   </div>
