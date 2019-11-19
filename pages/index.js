@@ -9,7 +9,6 @@ import { BackTop } from "antd";
 import Nav from "../components/Nav";
 import Catalog from "../components/Catalog";
 import ServicesSection from "../components/ServicesSection";
-import Data from "../apiMockup.json";
 import fetch from "isomorphic-unfetch";
 import About from "../components/About"
 import ExtraInfo from "../components/ExtraInfo"
