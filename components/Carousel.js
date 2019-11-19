@@ -3,6 +3,9 @@ import { Carousel, Icon } from 'antd';
 
 
 class Slides extends Component {
+  constructor(props) {
+    super(props);
+  }
     render(){
       const settings = {
         dots: true,
@@ -17,9 +20,9 @@ class Slides extends Component {
       return(
         <div className="carousel" style={{height:"60%"}}>
           <Carousel {...settings}>
-            <div><img src="https://travari.s3-us-west-2.amazonaws.com/images/lobby-rug.jpg" style={{position:"relative", top:"-10rem", width:"110vw"}} alt=""/></div>
-            <div><img src="https://travari.s3-us-west-2.amazonaws.com/images/ryan-christodoulou-Vra_DPrrBlE-unsplash.jpg" style={{ width:"110vw", position:"relative", top:"-60rem"}} alt=""/></div>
-            <div><img src="https://travari.s3-us-west-2.amazonaws.com/images/jonathan-stout-Pa-kKr31C7o-unsplash.jpg" style={{height:"50rem", position:"relative", top:"-10rem"}} alt=""/></div>
+            <div><img src={this.props.img1} style={{position:"relative", top:"-10rem", width:"110vw"}} alt=""/></div>
+            <div><img src={this.props.img2} style={{ width:"110vw", position:"relative", top:"-60rem"}} alt=""/></div>
+            <div><img src={this.props.img3} style={{height:"50rem", position:"relative", top:"-10rem"}} alt=""/></div>
             {/* <div><img src="https://travari.s3-us-west-2.amazonaws.com/images/helen-thomas-THefbtvPmU4-unsplash.jpg" style={{height:"50rem", position:"relative", top:"-10rem"}} alt=""/></div> */}
           </Carousel>
           <style global jsx>{`
@@ -69,6 +72,5 @@ class Slides extends Component {
         </div>
       );
     }
-  };
-
+  }
 export default Slides

@@ -43,6 +43,12 @@
 // module.exports = withImages({})
 
 const withCss = require('@zeit/next-css')
+const withImages = require('next-images')
+module.exports = withImages({
+  webpack(config, options) {
+    return config
+  }
+})
 
 module.exports = withCss({
   webpack: (config, { isServer }) => {

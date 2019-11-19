@@ -19,7 +19,7 @@ const Contact = ({
         span={10}
         style={{
           padding: "5rem",
-          height: "500px",
+          height: "100%",
           display: "flex",
           flexFlow: "column",
           justifyContent: "space-between"
