@@ -12,7 +12,7 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
         marginTop: "50px",
         marginBottom: "0",
         width: "100%",
-        height: "22rem",
+        height: "25vw",
         overflow: "hidden"
       }}
     >
@@ -22,7 +22,10 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
         style={{
           display: "flex",
           justifyContent: "start",
-          alignContent: "middle"
+          alignItems: "center",
+          alignContent:"center",
+          alignSelf:"center",
+          height:"100%"
         }}
       >
         
@@ -50,15 +53,16 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
         style={{
           display: "flex",
           justifyContent: "center",
-          alignContent: "middle"
+          alignContent: "middle",
+          overflow:"hidden"
         }}
       >
         <img
-          style={{ width: "100%", margin: "10px" }}
+          style={{ width: "25rem", height: "100%", margin: "10px", position:"top", display:"flex", justifyContent:"center", left:"50%" }}
           src="https://travari.s3-us-west-2.amazonaws.com/images/central-rug.jpg"
         ></img>
         <img
-          style={{ width: "100%", margin: "10px" }}
+          style={{ width: "25rem", height: "100%", margin: "10px" }}
           src="https://travari.s3-us-west-2.amazonaws.com/images/large-table-rug.jpg"
         ></img>
       </Col>
@@ -104,6 +108,15 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
         display:flex;
         justify-content:end;
         align-items:end;
+      }
+      .ant-col-16 {
+        display: flex;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 66.66666667%;
+        flex-flow: column;
+        justify-content: center;
+        align-self: baseline;
       }
     `}</style>
   </div>
