@@ -3,7 +3,7 @@ import { Col, Row, Typography, Button } from "antd";
 const { Title } = Typography;
 
 const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
-  <div className="about" style={{ overflow: "hidden" }}>
+  <div className="about" style={{  }}>
     <Row
       type="flex"
       justify="center"
@@ -13,7 +13,7 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
         marginBottom: "0",
         width: "100%",
         height: "25vw",
-        overflow: "hidden"
+        overflow: "hidden",
       }}
     >
         <Col span={2}></Col>
@@ -25,7 +25,7 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
           alignItems: "center",
           alignContent:"center",
           alignSelf:"center",
-          height:"100%"
+       
         }}
       >
         
@@ -58,14 +58,31 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
         }}
       >
         <img
-          style={{ width: "25rem", height: "100%", margin: "10px", position:"top", display:"flex", justifyContent:"center", left:"50%" }}
+          style={{ width: "25rem", height:"22rem", margin: "10px", position:"top", display:"flex", justifyContent:"center", left:"50%" }}
           src="https://travari.s3-us-west-2.amazonaws.com/images/central-rug.jpg"
         ></img>
         <img
-          style={{ width: "25rem", height: "100%", margin: "10px" }}
+          style={{ width: "25rem", height:"22rem", margin: "10px" }}
           src="https://travari.s3-us-west-2.amazonaws.com/images/large-table-rug.jpg"
         ></img>
       </Col>
+      {/* <Col span={4} style={{overflow: "hidden", display:"flex" , justifyContent:"center"}}>
+       
+      <img
+          style={{ height:"22rem" }}
+          src="https://travari.s3-us-west-2.amazonaws.com/images/central-rug.jpg"
+        />
+    
+      </Col>
+      <Col span={4} style={{overflow: "hidden", display:"flex" , justifyContent:"center"}}>
+       >
+       
+      <img
+          style={{ height:"22rem" }}
+          src="https://travari.s3-us-west-2.amazonaws.com/images/large-table-rug.jpg"
+        />
+     
+      </Col> */}
       <Col span={2}></Col>
     </Row>
     <Row style={{ marginBottom: "2rem" }}>
@@ -96,7 +113,7 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
         color: #363636;
       }
       .subtitle {
-        font-size: 3.5rem;
+        font-size: 3rem;
         color: #363636;
         margin-bottom: 2rem;
       }
@@ -109,15 +126,17 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
         justify-content:end;
         align-items:end;
       }
-      .ant-col-16 {
-        display: flex;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        width: 66.66666667%;
-        flex-flow: column;
-        justify-content: center;
-        align-self: baseline;
-      }
+    //   .ant-col-16 {
+    // display: flex;
+    // -webkit-box-sizing: border-box;
+    // box-sizing: border-box;
+    // width: 66.66666667%;
+    // flex-flow: column;
+    // justify-content: center;
+    // align-self: baseline;
+    //   }
+ 
+
     `}</style>
   </div>
 );
