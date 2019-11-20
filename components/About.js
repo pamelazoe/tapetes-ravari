@@ -1,6 +1,5 @@
 import React from "react";
-import { Col, Row } from "antd";
-import { Typography } from "antd";
+import { Col, Row, Typography, Button } from "antd";
 const { Title } = Typography;
 
 const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
@@ -81,6 +80,9 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
       </Col>
       <Col span={8} style={{ padding: "15px" }}>
         <p>{text3}</p>
+        <div className="button-div">
+        <Button style={{letterSpacing:"0.2em", width:"10rem", height:"2.2rem", fontSize:".8rem", backgroundColor:"black", border:"none", color:"white"}}>Contáctanos</Button>
+        </div>
       </Col>
       <Col span={2}></Col>
     </Row>
@@ -96,6 +98,12 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
       }
       p {
         color: #363636;
+      }
+      .button-div {
+        height:9rem;
+        display:flex;
+        justify-content:end;
+        align-items:end;
       }
     `}</style>
   </div>

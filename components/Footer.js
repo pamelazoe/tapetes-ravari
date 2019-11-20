@@ -6,7 +6,7 @@ const { Footer, Content } = Layout;
 
 const PageFooter = ({ by, legal, terms }) => (
   <footer>
-    <Footer style={{ backgroundColor: "#7E764F", height: "31rem", display:"flex",
+    <Footer style={{ backgroundColor: "#7E764F", height: "28rem", display:"flex",
                     justifyContent:"space-between", flexDirection:"column",
                     alignContent:"space-around", backgroundImage: "url(https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png)",
                     }}>
@@ -30,9 +30,12 @@ const PageFooter = ({ by, legal, terms }) => (
             justifyContent: "center"
           }}
         >
+          <a href="https://www.facebook.com/tapetesravari/">
           <img style={{height:"70px", width:"70px", display:"flex", justifyContent:"center", margin:"30px"}} src="https://travari.s3-us-west-2.amazonaws.com/images/fblogo.png"></img>
+          </a>
+          <a href="https://www.instagram.com/tapetesravari/" >
           <img style={{height:"70px", width:"70px", display:"flex", justifyContent:"center", margin:"30px"}} src="https://travari.s3-us-west-2.amazonaws.com/images/instalogo.png"></img>
-          
+          </a>
           
         </Col>
         <Col span={8} style={{ height: "10rem" }}></Col>

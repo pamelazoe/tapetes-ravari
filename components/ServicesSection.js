@@ -55,13 +55,13 @@ const ServicesSection = ({
 
         <div className="square">
           <div className="content spread">
-            <img src="https://travari.s3-us-west-2.amazonaws.com/images/rug-cleaning.jpg"></img>
+            <img src="https://travari.s3-us-west-2.amazonaws.com/images/rep.jpg"></img>
           </div>
         </div>
 
         <div className="square">
           <div className="content column">
-            <img src="https://travari.s3-us-west-2.amazonaws.com/images/rug-cleaning.jpg"></img>
+            <img src="https://travari.s3-us-west-2.amazonaws.com/images/trang-nguyen-drke6MEs8Gg-unsplash.jpg"></img>
           </div>
         </div>
         <div className="square-content">

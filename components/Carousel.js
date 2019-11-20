@@ -51,6 +51,7 @@ class Slides extends Component {
         }
         .ant-carousel .slick-dots-bottom {
           bottom: 5rem;
+          z-index:150000;
         }
         .slick-dots slick-dots-bottom {
           display: flex;
@@ -58,15 +59,10 @@ class Slides extends Component {
         }
         .ant-carousel .slick-dots li button:hover, .ant-carousel .slick-dots li button:focus {
           margin:15px;
-        }
-        // a:visited, a:hover, a:active, a:focus {
-        //   text-decoration: none;
-        // }
-   
+        }   
         .ant-carousel img {
           opacity:.5
         }
-    
      
       `}</style>
         </div>

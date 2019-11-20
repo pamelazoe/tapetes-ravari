@@ -13,7 +13,7 @@ const Contact = ({
     className="contact-section" id="contact"
     style={{ backgroundColor: "black", color: "white" }}
   >
-    <Row style={{height:"100%"}}>
+    <Row style={{}}>
       <Col span={2} style={{backgroundColor:"transparent"}}/>
       <Col
         span={10}
@@ -26,9 +26,11 @@ const Contact = ({
         }}
       >
         <Col span={2} />
-        <Row>
-          <Title style={{ color: "white", margin:"0" }}>{contactTitle}</Title>
+        <div className="contact-title" >
+        <Row type="flex" justify="start">
+          <h1>{contactTitle}</h1>
         </Row>
+        </div>
         <Row>
           <p style={{ color: "white" }}>{contactContent}</p>
         </Row>
@@ -51,16 +53,25 @@ const Contact = ({
             <Icon type="schedule" />
           </Col>
           <Col span={22}>
-            <Text style={{ color: "white" }}>{schedule}</Text>
+            <p style={{ color: "white" }}>{schedule}</p>
           </Col>
         </Row>
       </Col>
       <Col span={12}>Form</Col>
     </Row>
-    <style global jsx>{`
+    <style jsx>{`
         .ant-typography h1 {   
           margin:0;
-        }     
+        }
+        .contact-title {
+          color: "white";
+        }
+        h1 {
+          color:white;
+        }
+        p {
+          font-size: .8rem;
+        }
       `}</style>
   </div>
 );

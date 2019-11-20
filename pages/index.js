@@ -75,8 +75,8 @@ export default class Home extends React.Component {
       about: {
         title: "¿Quienes somos?",
         subtitle: "Más de 40 años de experiencia",
-        text1: "Aw, geez. This is because you give Morty Smith bad grades, bitch! S-S-Samantha. We are created to serve a singular purpose, for which we will go to any lengths to fulfill!",
-        text2: "Puh rum pum pow! Lookin' good! Lick, lick, lick my balls! Are you hungry for apples? ARE YOU HUNGRY FOR APPLESSS!?",
+        text1: "That, out there. That's my grave. On one of our adventures Rick and I basically destroyed the whole world. So we bailed on that reality and we came to this one. Because in this one the world wasn't destroyed. And in this one, we were dead. So we came here a-a-and we buried ourselves and we took their place.",
+        text2: "And every morning, Summer, I eat breakfast 2 I've replaced them both as the de facto patriarch of your family and your universe. Your mom wouldn't have accepted me if I came home without you and your sister, so now you know the real reason I rescued you. I just took over the family, Morty! ",
         text3: "Shut the fuck up about moonmen! Hello Jerry, come to rub my face in urine again? Hey listen, you know, if we're all bored over here, wouldn't the common denominator be you? Yo! What up my glip glops! Nice to wheat you! Oh no. I'm late to class, bitch. And that's the wayyy, the news goes! Meeseeks were not born into this world fumbling for meaning, Jerry! Morty!"
       },
       extraInfo: {
@@ -173,7 +173,13 @@ export default class Home extends React.Component {
         <BackTop />
         <style global jsx>{`
         body {
-          background-image:url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png")
+          background-image:url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
+          padding:0;
+          margin:0;
+          min-height:100%;
+        }
+        html {
+          height:auto;
         }
         `}</style>
       </div>
