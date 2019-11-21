@@ -4,7 +4,7 @@ import { Menu, Affix, Col, Row, Layout, Icon } from "antd";
 import TopBanner from '../components/TopBanner'
 
 const Nav = ({ home, about, services, contact, phone, email }) => (
-  <div className="navbar" style={{ backgroundColor: "white", zIndex:"500", display:"block", flexFlow:"column"}}>
+  <div className="navbar" style={{ backgroundColor: "white", zIndex:"50000000000", display:"block", flexFlow:"column"}}>
 {/* <TopBanner
 phone="(55) 5555 5555" email="ventas@travari.mx"
 /> */}
@@ -16,11 +16,11 @@ phone="(55) 5555 5555" email="ventas@travari.mx"
       <Col span={10}>
         <Link href="/#contact">
         <a>
-              <img src="https://travari.s3-us-west-2.amazonaws.com/images/travari-logo.jpg" style={{maxHeight:"3rem", display:"flex", justifyContent:"center", margin:"0"}} alt=""></img>
+              <img src="https://travari.s3-us-west-2.amazonaws.com/images/travari-logo.jpg" style={{maxHeight:"3rem", display:"flex", justifyContent:"flex-start", margin:"0"}} alt=""></img>
           </a>
         </Link>
       </Col>
-      <Col span={10} style={{display:"flex", justifyContent:"end", background:"white"}}>
+      <Col span={10} style={{display:"flex", justifyContent:"flex-end", background:"white"}}>
         <Menu mode="horizontal" style={{marginTop:"20px",marginBottom:"20px", display:"flex", justifyContent:"end"}}>
         <Menu.Item key="home" style={{outline:"0"}}>
           {/* <a href="/" target="_blank" rel="noopener noreferrer"></a> */}

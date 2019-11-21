@@ -42,7 +42,8 @@
 
 // module.exports = withImages({})
 
-const withCss = require('@zeit/next-css')
+const withCSS = require('@zeit/next-css')
+module.exports = withCSS()
 const withImages = require('next-images')
 module.exports = withImages({
   webpack(config, options) {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Typography, Icon } from "antd";
 const { Title, Text } = Typography;
+import ContactForm from "./ContactForm"
 
 const Contact = ({
   contactTitle,
@@ -10,19 +11,18 @@ const Contact = ({
   schedule
 }) => (
   <div
-    className="contact-section" id="contact"
-    style={{ backgroundColor: "black", color: "white" }}
+    className="contact-section"
+    style={{ backgroundColor: "black", color: "white", height:"30rem", display:"flex", justifyContent:"center", alignItems:"center" }}
   >
-    <Row style={{}}>
+    <Row type="flex" justify="center">
       <Col span={2} style={{backgroundColor:"transparent"}}/>
       <Col
         span={10}
         style={{
-          padding: "5rem",
+          padding: "0 6rem",
           height: "100%",
           display: "flex",
           flexFlow: "column",
-          justifyContent: "space-between"
         }}
       >
         <Col span={2} />
@@ -52,12 +52,16 @@ const Contact = ({
           <Col span={2}>
             <Icon type="schedule" />
           </Col>
-          <Col span={22}>
+          <Col span={22} style={{display:"flex", justifyContent:"center"}}>
             <p style={{ color: "white" }}>{schedule}</p>
           </Col>
         </Row>
       </Col>
-      <Col span={12}>Form</Col>
+      <Col span={10} style={{display:"flex", justifyContent:"center", alignContent:"center", alignItems:"center"}}>
+
+        <ContactForm />
+      </Col>
+      <Col span={2} />
     </Row>
     <style jsx>{`
         .ant-typography h1 {   
@@ -72,6 +76,7 @@ const Contact = ({
         p {
           font-size: .8rem;
         }
+        
       `}</style>
   </div>
 );

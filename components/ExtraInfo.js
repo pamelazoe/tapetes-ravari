@@ -39,7 +39,7 @@ const ExtraInfo = ({headerInfo, contentInfo, li1, li2, li3, li4, li5}) => (
             
             <Col span={10} style={{overflow:"hidden"}}>
             <Row type="flex" align="top" justify="center">
-                <img style={{minWidth:"130%"}} src="https://travari.s3-us-west-2.amazonaws.com/images/mosaic-rug.jpg"></img>
+                <img style={{width:"45rem"}} src="https://travari.s3-us-west-2.amazonaws.com/images/mosaic-rug.jpg"></img>
                 </Row>
             </Col>
             
@@ -60,6 +60,9 @@ const ExtraInfo = ({headerInfo, contentInfo, li1, li2, li3, li4, li5}) => (
       }
       .extra-info {
           margin-bottom:5rem;
+      }
+      .extra-info {
+        height:100%;
       }
     `}</style>
     </div>

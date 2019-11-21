@@ -12,6 +12,7 @@ import ServicesSection from "../components/ServicesSection";
 import fetch from "isomorphic-unfetch";
 import About from "../components/About"
 import ExtraInfo from "../components/ExtraInfo"
+import ServicesHeader from "../components/ServicesHeader"
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -100,7 +101,7 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{display:"flex", flexFlow:"column"}}>
         <Layout
           contactTitle={this.props.contact.contactTitle}
           contactContent={this.props.contact.contactContent}
@@ -144,8 +145,9 @@ export default class Home extends React.Component {
             text2={this.props.about.text2}
             text3={this.props.about.text3}
             />
+
+          
           <ServicesSection
-            sectionHeader={this.props.services.sectionHeader}
             cleaningHeader={this.props.services.cleaningHeader}
             repairHeader={this.props.services.repairHeader}
             saleHeader={this.props.services.saleHeader}
@@ -153,6 +155,9 @@ export default class Home extends React.Component {
             repairContent={this.props.services.repairContent}
             saleContent={this.props.services.saleContent}
           />
+          <ServicesHeader
+            sectionHeader={this.props.services.sectionHeader}
+            />
           <ExtraInfo 
             headerInfo={this.props.extraInfo.headerInfo}
             contentInfo={this.props.extraInfo.contentInfo}
@@ -171,16 +176,8 @@ export default class Home extends React.Component {
           />
         </Layout>
         <BackTop />
-        <style global jsx>{`
-        body {
-          background-image:url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
-          padding:0;
-          margin:0;
-          min-height:100%;
-        }
-        html {
-          height:auto;
-        }
+        <style  jsx>{`
+        
         `}</style>
       </div>
     );

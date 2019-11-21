@@ -48,9 +48,7 @@ export default class Contact extends React.Component {
     
    
    <style jsx>{`
-      .ant-back-top-icon {
-        i
-      }
+
         `}</style>
   
    </div>
