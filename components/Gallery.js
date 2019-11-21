@@ -10,7 +10,7 @@ const Gallery = ({ thmb1, thmb2, thmb3, thmb4, thmb5 }) => (
       </Col>
       <Col span={2}></Col>
     </Row>
-    <Row type="flex" justify="end" align="middle">
+    <Row type="flex" justify="end" align="middle" style={{marginBottom:"4rem"}}>
       <Col span={2}></Col>
       <Col span={20} style={{ display: "flex", justifyContent: "flex-end", fontSize:"1rem" }}>
         <a href="https://www.instagram.com/tapetesravari/">@ tapetesravari</a>

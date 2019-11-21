@@ -11,7 +11,37 @@ const ServicesSection = ({
   saleContent
 }) => (
   <div className="service-section">
-
+    <Row
+      type="flex"
+      justify="center"
+      align="middle"
+      style={{
+        marginTop: "30px",
+        width: "100%",
+        height: "10rem",
+        overflow: "hidden"
+      }}
+    >
+        <Col span={2}></Col>
+        <Col span={10}></Col>
+        <Col span={10}>
+          <div className="header-section" style={{display:"flex", justifyContent:"flex-end", marginBottom:"3rem"}}>{sectionHeader}</div>
+          <Row type="flex" justify="end">
+            <Col
+              span={23}
+              push={6}
+              style={{
+                backgroundImage:
+                  "-webkit-linear-gradient(0deg, #e8e7e1 55%, #7e764f 55%)",
+                minHeight: "4px",
+                maxHeight: " 4px",
+                width:"76%"
+              }}
+            ></Col>
+          </Row>
+        </Col>
+      <Col span={2}></Col>
+    </Row>
   <Row type="flex" justify="space-between" style={{ width: "100%" }}>
     <Col span={2}></Col>
     <Col span={20}>

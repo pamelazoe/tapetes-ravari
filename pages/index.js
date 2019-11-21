@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
 import Carousel from "../components/Carousel";
+//import CarouselV3 from "../components/CarouselV3";
 import HomeOverlay from "../components/HomeOverlay";
 import PageFooter from "../components/Footer";
 import Contact from "../components/Contact";
@@ -12,7 +13,6 @@ import ServicesSection from "../components/ServicesSection";
 import fetch from "isomorphic-unfetch";
 import About from "../components/About"
 import ExtraInfo from "../components/ExtraInfo"
-import ServicesHeader from "../components/ServicesHeader"
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -101,7 +101,9 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div style={{display:"flex", flexFlow:"column"}}>
+      <div 
+      style={{display:"flex", flexFlow:"column"}}
+      >
         <Layout
           contactTitle={this.props.contact.contactTitle}
           contactContent={this.props.contact.contactContent}
@@ -121,14 +123,32 @@ export default class Home extends React.Component {
             button1={this.props.overlay.button1}
             button2={this.props.overlay.button2}
           />
-          <Carousel
+          {/* <CarouselV3
             style={{
               textAlign: "center",
-              height: "2000px",
+              height: "10%",
               lineHeight: "160px",
               background: "#364d79",
-              overflow: "hidden",
-              zIndex: "-100"
+               overflow: "hidden",
+               zIndex: "-100"
+            }}
+            img1={this.props.carousel.img1}
+            img2={this.props.carousel.img2}
+            img3={this.props.carousel.img3}
+            line1={this.props.overlay.line1}
+            line2={this.props.overlay.line2}
+            text={this.props.overlay.text}
+            button1={this.props.overlay.button1}
+            button2={this.props.overlay.button2}
+          /> */}
+          <Carousel
+            style={{
+              // textAlign: "center",
+              // height: "2000px",
+              // lineHeight: "160px",
+              // background: "#364d79",
+              // overflow: "hidden",
+              // zIndex: "-100"
             }}
             img1={this.props.carousel.img1}
             img2={this.props.carousel.img2}
@@ -148,6 +168,7 @@ export default class Home extends React.Component {
 
           
           <ServicesSection
+            sectionHeader={this.props.services.sectionHeader}
             cleaningHeader={this.props.services.cleaningHeader}
             repairHeader={this.props.services.repairHeader}
             saleHeader={this.props.services.saleHeader}
@@ -155,9 +176,7 @@ export default class Home extends React.Component {
             repairContent={this.props.services.repairContent}
             saleContent={this.props.services.saleContent}
           />
-          <ServicesHeader
-            sectionHeader={this.props.services.sectionHeader}
-            />
+        
           <ExtraInfo 
             headerInfo={this.props.extraInfo.headerInfo}
             contentInfo={this.props.extraInfo.contentInfo}

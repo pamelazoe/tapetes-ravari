@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Icon, Input, Button, Row, Col } from 'antd';
-import "../index.css"
+import "../contact.css"
 const { TextArea } = Input;
 
 class ContactForm extends React.Component {
@@ -55,8 +55,8 @@ class ContactForm extends React.Component {
         <Col span={12}>
         
           <Form.Item>
-          <Button type="primary" htmlType="submit">
-            Log in
+          <Button htmlType="submit" style={{backgroundColor:"#7E764F", borderColor:"#7E764F", color:"white", width:"100%"}}>
+            Enviar
           </Button>
         </Form.Item>
         </Col>

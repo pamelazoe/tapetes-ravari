@@ -1,0 +1,104 @@
+.ant-carousel .slick-slide img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-self: flex-end;
+    position: relative;
+    top: -15rem;
+}
+
+.ant-carousel .slick-dots {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    top: -25em;
+}
+
+.ant-carousel .slick-dots li {
+    position: relative;
+    display: inline-block;
+    margin: 0 2px;
+    padding: 0;
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+    top: -61px;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    background: white;
+}
+.ant-carousel .slick-dots li.slick-active button {
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    opacity: 1;
+    border-radius: 100%;
+}
+
+.ant-carousel .slick-dots li button {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    padding: 0;
+    color: transparent;
+    font-size: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 1px;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.3;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .xxx {
+      height: 85vmin;
+      overflow: hidden;
+  }
+  .img-cont {
+      display: flex;
+      position: relative;
+      height: 100%;
+  }
+
+  .ant-carousel .slick-slide {   
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    height: 88vh;
+    line-height: 160px;
+    overflow: hidden;
+  }
+
+  .ant-carousel .slick-dots li button{
+    width: 20px;
+    height: 20px;
+    border-radius:100%;
+    display:flex;
+    margin:15px;
+  }
+  .ant-carousel .slick-dots li.slick-active button {
+    width: 20px;
+    background: #fff;
+    opacity: 1;
+    margin:15px;
+  }
+  .ant-carousel .slick-dots-bottom {
+    bottom: 5rem;
+    z-index:150000;
+  }
+  .slick-dots slick-dots-bottom {
+    display: flex;
+    justify-content: center;
+  }
+  .ant-carousel .slick-dots li button:hover, .ant-carousel .slick-dots li button:focus {
+    margin:15px;
+  }   

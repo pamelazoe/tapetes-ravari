@@ -42,7 +42,7 @@
 
 // module.exports = withImages({})
 
-const withCSS = require('@zeit/next-css')
+const withCss = require('@zeit/next-css')
 // module.exports = withCSS()
 const withImages = require('next-images')
 module.exports = withImages({
@@ -51,29 +51,88 @@ module.exports = withImages({
   }
 })
 
-module.exports = withCSS({
+
+module.exports = withCss({
   webpack: (config, { isServer }) => {
     if (isServer) {
-      const antStyles = /antd\/.*?\/style\/css.*?/
-      const origExternals = [...config.externals]
+      const antStyles = /antd\/.*?\/style\/css.*?/;
+      const origExternals = [...config.externals];
       config.externals = [
         (context, request, callback) => {
-          if (request.match(antStyles)) return callback()
+          if (request.match(antStyles)) return callback();
           if (typeof origExternals[0] === 'function') {
-            origExternals[0](context, request, callback)
+            origExternals[0](context, request, callback);
           } else {
-            callback()
+            callback();
           }
         },
-        ...(typeof origExternals[0] === 'function' ? [] : origExternals),
-      ]
+        ...(typeof origExternals[0] === 'function' ? [] : origExternals)
+      ];
 
       config.module.rules.unshift({
         test: antStyles,
-        use: 'null-loader',
-      })
+        use: 'null-loader'
+      });
+    } else {
+      config.module.rules.push({
+        test: /\.(eot|woff|woff2|ttf|svg|png|jpg|gif)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 100000,
+            name: '[name].[ext]'
+          }
+        }
+      });
     }
-    return config
-  },
-})
 
+    return config;
+  }
+});
+
+
+
+
+
+
+// module.exports = withCSS({
+//   webpack: (config, { isServer }) => {
+//     if (isServer) {
+//       const antStyles = /antd\/.*?\/style\/css.*?/
+//       const origExternals = [...config.externals]
+//       config.externals = [
+//         (context, request, callback) => {
+//           if (request.match(antStyles)) return callback()
+//           if (typeof origExternals[0] === 'function') {
+//             origExternals[0](context, request, callback)
+//           } else {
+//             callback()
+//           }
+//         },
+//         ...(typeof origExternals[0] === 'function' ? [] : origExternals),
+//       ]
+
+//       config.module.rules.unshift({
+//         test: antStyles,
+//         use: 'null-loader',
+//       })
+//     }
+//     return config
+//   },
+// })
+
+// module.exports = withCSS({
+//   webpack: function (config) {
+//     config.module.rules.push({
+//       test: /\.(eot|woff|woff2|ttf|svg|png|jpg|gif)$/,
+//       use: {
+//         loader: 'url-loader',
+//         options: {
+//           limit: 100000,
+//           name: '[name].[ext]'
+//         }
+//       }
+//     })
+//     return config
+//   }
+// })

@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Col, Typography, Icon } from "antd";
-const { Title, Text } = Typography;
 import ContactForm from "./ContactForm"
 
 const Contact = ({

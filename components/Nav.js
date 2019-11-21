@@ -23,7 +23,7 @@ phone="(55) 5555 5555" email="ventas@travari.mx"
       </Col>
       <Col span={10} style={{display:"flex", justifyContent:"flex-end", background:"white"}}>
         <Menu mode="horizontal" style={{marginTop:"20px",marginBottom:"20px", display:"flex", justifyContent:"end"}}>
-        <Menu.Item key="home">
+        <Menu.Item key="home" >
           {/* <a href="/" target="_blank" rel="noopener noreferrer"></a> */}
           <Link href="/">
           <a>

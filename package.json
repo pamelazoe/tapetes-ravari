@@ -23,7 +23,10 @@
     "null-loader": "2.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-responsive-gallery": "^1.1.0"
+    "react-responsive-gallery": "^1.1.0",
+    "react-slick": "^0.25.2",
+    "slick-carousel": "^1.8.1",
+    "url-loader": "^2.2.0"
   },
   "license": "ISC"
 }
