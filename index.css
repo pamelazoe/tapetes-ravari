@@ -1,3 +1,7 @@
+/* body {
+  overflow-x: hidden; 
+} */
+
 textarea.ant-input {
   background: transparent;
   border-radius: 0;
@@ -19,7 +23,7 @@ textarea.ant-input {
   width: 100%;
   height: 32px;
   padding: 4px 11px;
-  color: red;
+  color: white;
   font-size: 14px;
   line-height: 1.5;
   background-color: transparent;
@@ -31,4 +35,162 @@ textarea.ant-input {
   border-radius: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+.ant-menu-horizontal .ant-menu-item,
+.ant-menu-horizontal .ant-menu-submenu {
+  margin-top: -1px;
+}
+.ant-menu-horizontal > .ant-menu-item:hover,
+.ant-menu-horizontal > .ant-menu-item-active,
+.ant-menu-horizontal > .ant-menu-submenu .ant-menu-submenu-title:hover {
+  background-color: transparent;
+}
+.ant-menu-item-selected {
+  color: transparent;
+}
+.ant-menu-item-selected > a,
+.ant-menu-item-selected > a:hover {
+  color: transparent;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #e6f7ff;
+}
+.ant-menu-inline,
+.ant-menu-vertical,
+.ant-menu-vertical-left {
+  border-right: 1px solid #e8e8e8;
+}
+
+
+.ant-menu-horizontal > .ant-menu-item:hover,
+.ant-menu-horizontal > .ant-menu-submenu:hover,
+.ant-menu-horizontal > .ant-menu-item-active,
+.ant-menu-horizontal > .ant-menu-submenu-active,
+.ant-menu-horizontal > .ant-menu-item-open,
+.ant-menu-horizontal > .ant-menu-submenu-open,
+.ant-menu-horizontal > .ant-menu-item-selected,
+.ant-menu-horizontal > .ant-menu-submenu-selected {
+  color: transparent;
+  border-bottom: solid 2px transparent;
+}
+.ant-menu-horizontal > .ant-menu-item > a {
+  display: block;
+  color: rgba(0, 0, 0, 0.65);
+}
+.ant-menu-horizontal > .ant-menu-item > a:hover {
+  color: black;
+}
+.ant-menu-horizontal > .ant-menu-item > a::before {
+  bottom: -2px;
+}
+.ant-menu-horizontal > .ant-menu-item-selected > a {
+  color: black;
+}
+
+.ant-input:focus {
+  border-color: white;
+  border-right-width: 1px !important;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 2px rgba(24, 144, 255, 0);
+          box-shadow: 0 0 0 2px rgba(24, 144, 255, 0);
+}
+
+.ant-input-group-addon .ant-select-open .ant-select-selection,
+.ant-input-group-addon .ant-select-focused .ant-select-selection {
+  color: transparent;
+}
+.ant-input:hover {
+  border-color: #7E764F;
+  border-right-width: 1px !important;
+}
+
+.ttt {
+  background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/lobby-rug.jpg");
+  height: 30rem;
+  background-size: 100%;
+  background-position: center bottom;
+}
+.slick-dots {
+  position: absolute;
+  top: 30rem;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 100%;
+}
+.slick-dots li button::before {
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  border: none;
+  background-color:
+  rgb(0,0,0,0.6);
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+.slick-initialized .slick-slide {
+
+  display: flex;
+  justify-content: center;
+
+}
+.slick-slide .slick-active .slick-current {
+  display: flex;
+  justify-content: center;
+}
+output {
+  display: flex;
+}
+.slick-initialized .slick-slide
+{
+    display: flex;
+}
+.container {
+  background: #419be0;
+  height: 30rem;
+  width: 100%;
+}
+
+.slick-slide img {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.container {
+  /* padding: 40px; */
+  background: #419be0;
+}
+
+.slick-slide img {
+  margin: auto;
+  width: 100%;
+}
+
+.slick-dots-main-slider-dot {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 0px 6px;
+  background-color: transparent;
+  border: 1.4px solid #8fc84a;
+  border-radius: 20px;
+}
+
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  font-size: 0;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  content:"";
+}
+
+div.container > div.slick-slider.slick-initialized > ul.slick-dots > li > button {
+  display: inline-flex;
 }

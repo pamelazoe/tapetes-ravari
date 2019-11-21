@@ -1,0 +1,105 @@
+/* body {
+  overflow-x: hidden; 
+} */
+
+textarea.ant-input {
+    background: transparent;
+    border-radius: 0;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+  }
+  .ant-input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum';
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    padding: 4px 11px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: transparent;
+    background-image: none;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: solid 1px white;
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .ant-menu-horizontal .ant-menu-item,
+  .ant-menu-horizontal .ant-menu-submenu {
+    margin-top: -1px;
+  }
+  .ant-menu-horizontal > .ant-menu-item:hover,
+  .ant-menu-horizontal > .ant-menu-item-active,
+  .ant-menu-horizontal > .ant-menu-submenu .ant-menu-submenu-title:hover {
+    background-color: transparent;
+  }
+  .ant-menu-item-selected {
+    color: transparent;
+  }
+  .ant-menu-item-selected > a,
+  .ant-menu-item-selected > a:hover {
+    color: transparent;
+  }
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: #e6f7ff;
+  }
+  .ant-menu-inline,
+  .ant-menu-vertical,
+  .ant-menu-vertical-left {
+    border-right: 1px solid #e8e8e8;
+  }
+  
+  
+  .ant-menu-horizontal > .ant-menu-item:hover,
+  .ant-menu-horizontal > .ant-menu-submenu:hover,
+  .ant-menu-horizontal > .ant-menu-item-active,
+  .ant-menu-horizontal > .ant-menu-submenu-active,
+  .ant-menu-horizontal > .ant-menu-item-open,
+  .ant-menu-horizontal > .ant-menu-submenu-open,
+  .ant-menu-horizontal > .ant-menu-item-selected,
+  .ant-menu-horizontal > .ant-menu-submenu-selected {
+    color: transparent;
+    border-bottom: solid 2px transparent;
+  }
+  .ant-menu-horizontal > .ant-menu-item > a {
+    display: block;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  .ant-menu-horizontal > .ant-menu-item > a:hover {
+    color: black;
+  }
+  .ant-menu-horizontal > .ant-menu-item > a::before {
+    bottom: -2px;
+  }
+  .ant-menu-horizontal > .ant-menu-item-selected > a {
+    color: black;
+  }
+  
+  .ant-input:focus {
+    border-color: white;
+    border-right-width: 1px !important;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(24, 144, 255, 0);
+            box-shadow: 0 0 0 2px rgba(24, 144, 255, 0);
+  }
+  
+  .ant-input-group-addon .ant-select-open .ant-select-selection,
+  .ant-input-group-addon .ant-select-focused .ant-select-selection {
+    color: transparent;
+  }
+  .ant-input:hover {
+    border-color: #7E764F;
+    border-right-width: 1px !important;
+  }
