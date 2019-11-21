@@ -2,9 +2,10 @@ import React from "react";
 import Link from "next/link";
 import { Menu, Affix, Col, Row, Layout, Icon } from "antd";
 import TopBanner from '../components/TopBanner'
+import "../index.css"
 
 const Nav = ({ home, about, services, contact, phone, email }) => (
-  <div className="navbar" style={{ backgroundColor: "white", zIndex:"50000000000", display:"block", flexFlow:"column"}}>
+  <div className="navbar" style={{ backgroundColor: "white", zIndex:"50000000000", display:"flex", flexFlow:"column"}}>
 {/* <TopBanner
 phone="(55) 5555 5555" email="ventas@travari.mx"
 /> */}
@@ -22,7 +23,7 @@ phone="(55) 5555 5555" email="ventas@travari.mx"
       </Col>
       <Col span={10} style={{display:"flex", justifyContent:"flex-end", background:"white"}}>
         <Menu mode="horizontal" style={{marginTop:"20px",marginBottom:"20px", display:"flex", justifyContent:"end"}}>
-        <Menu.Item key="home" style={{outline:"0"}}>
+        <Menu.Item key="home">
           {/* <a href="/" target="_blank" rel="noopener noreferrer"></a> */}
           <Link href="/">
           <a>
