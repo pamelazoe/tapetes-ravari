@@ -3,11 +3,7 @@ import { Col, Row, Typography, Button } from "antd";
 const { Title } = Typography;
 
 const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
-<<<<<<< HEAD
-  <div className="about" style={{ paddingBottom:"2rem" }}>
-=======
   <div className="about" style={{  }}>
->>>>>>> 5d7d150776754a9a409974b1fc699cb302392c54
     <Row
       type="flex"
       justify="center"
