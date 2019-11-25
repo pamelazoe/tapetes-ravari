@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+ body {
+     font-family: 'Lato', sans-serif;
+}
+ @media (max-width: 576px){
+     .show-desktop-hide-mobile {
+         width: 0;
+         height: 0;
+         display: none !important;
+         overflow: hidden;
+    }
+     .ant-drawer-body{
+         padding: 0;
+    }
+     .ant-btn {
+         border: transparent;
+         padding: 0;
+         margin: 0;
+         height: 3rem;
+    }
+     [data-icon="menu"] {
+         display: inline-block;
+         width: 1.5rem;
+         height: 1.5rem;
+    }
+     .ant-drawer-close {
+         margin: 0px 15px;
+    }
+     .logo{
+         width: 100%;
+         height: 100%;
+         display: flex;
+         justify-content: flex-start;
+         align-content: center;
+    }
+     .ant-drawer-header{
+         background-image:url("https://travari.s3-us-west-2.amazonaws.com/images/travari-logo-white.png");
+         background-position: left;
+         background-size: 7rem;
+         background-repeat: no-repeat;
+         height: 6rem;
+         background-origin: content-box;
+         background-color: #7E764F;
+         border-bottom: solid 0.5px rgb(176, 176, 176);
+    }
+     .ant-menu-root.ant-menu-vertical-right{
+         background-color: #7E764F;
+         border:none;
+         height: 100%;
+    }
+     .ant-drawer-header img{
+         padding: 20px 0px;
+    }
+     .menuBar {
+         height: 5rem;
+         background: white;
+         z-index: 90000000;
+    }
+     .ant-drawer-close{
+         height: 100%;
+         color: white;
+    }
+     [data-icon="close"]{
+         width: 2rem;
+         height: 1.2rem;
+    }
+     .ant-drawer-content {
+         background-color: #7E764F;
+         z-index: 8000000000;
+    }
+     .ant-menu-vertical-right > .ant-menu-item {
+         height: 18vmax;
+         width: 100vmin;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+     .ant-menu-item > a {
+         color: rgb(220, 220, 220);
+         font-size: 1.5rem;
+         letter-spacing: 0.1rem;
+    }
+     .ant-menu ant-menu-light ant-menu-root ant-menu-vertical-right {
+         display: flex;
+         justify-content: center;
+    }
+     .ant-drawer-body {
+         height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+     .ant-menu-item > a::after:focus {
+         background: black;
+    }
+     .ant-menu-item-active {
+         background: black;
+    }
+}
+ @media (min-width: 576px) {
+     .show-mobile-hide-desktop {
+         width: 0;
+         height: 0;
+         display: none !important;
+         overflow: hidden;
+         background:white;
+    }
+     .ant-menu-horizontal .ant-menu-item, .ant-menu-horizontal .ant-menu-submenu {
+         margin-top: -1px;
+         letter-spacing: 0.1rem;
+         font-size: 0.85rem;
+    }
+     .nav{
+         display:flex;
+         justify-content:center;
+         justify-items:center;
+         align-items:center;
+         background:white;
+         z-index:1500;
+         height: 5rem;
+    }
+     .nav-container {
+         width: 100%;
+         height: 100%;
+    }
+}
+ .ant-menu-horizontal .ant-menu-item, .ant-menu-horizontal .ant-menu-submenu {
+     margin-top: -1px;
+}
+ .ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu .ant-menu-submenu-title:hover {
+     background-color: transparent;
+}
+ .ant-menu-item-selected {
+     color: transparent;
+}
+ .ant-menu-item-selected > a, .ant-menu-item-selected > a:hover {
+     color: transparent;
+}
+ .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+     background-color: #e6f7ff;
+}
+ .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+     border-right: 1px solid #e8e8e8;
+}
+ .ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-submenu:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu-active, .ant-menu-horizontal > .ant-menu-item-open, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected {
+     color: transparent;
+     border-bottom: solid 2px transparent;
+}
+ .ant-menu-horizontal > .ant-menu-item > a {
+     display: block;
+     color: rgba(94, 94, 94, 0.65);
+}
+ .ant-menu-horizontal > .ant-menu-item > a:hover {
+     color: black;
+}
+ .ant-menu-horizontal > .ant-menu-item > a::before {
+     bottom: -2px;
+}
+ .ant-menu-horizontal > .ant-menu-item-selected > a {
+     color: black;
+}
+ .ant-menu-horizontal{
+     border-bottom:none;
+}
+ .ant-menu-horizontal > .ant-menu-item > a:hover {
+     color:black;
+     border:none;
+     text-decoration:none;
+}
+ .ant-menu-horizontal > .ant-menu-item > a:active {
+     color:black;
+}
+ .ant-menu-item-active {
+     border-bottom: 2px solid transparent !important;
+     color: inherit !important;
+}
+ .ant-menu-submenu-arrow {
+     display: none;
+}
+ 

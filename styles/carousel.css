@@ -1,0 +1,235 @@
+@media (max-width: 576px) {
+/* .carousel {
+  height: 75vmax;
+} */
+.carousel {
+  height: 60vmax;
+  /* height: 406px; */
+}
+.ant-carousel {
+  height: 100%;
+}
+.ant-carousel .slick-slider {
+  height: 100%;
+}
+.slick-track {
+  height: 100%;
+}
+.slick-list {
+  height: 100%;
+}
+.slick-slide {
+  height: 100%;
+}
+.ant-carousel .slick-slide {
+  height: 100%;
+  background: black !important;
+  background-color: black !important;
+}
+.slick-slide .slick-cloned {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.ant-carousel .slick-list .slick-slide.slick-active{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-slide .slick-active .slick-current {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.slick {
+  height: 100%;
+}
+.ant-carousel .slick-next {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.ant-carousel .slick-initialized .slick-slide {
+  height: 100%;
+}
+.ant-carousel .slick-dots-bottom {
+  bottom: 60px;
+  z-index: 100;
+}
+.ant-carousel .slick-dots li button {
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  margin: 0px 8px;
+}
+.ant-carousel .slick-dots li button:hover,
+.ant-carousel .slick-dots li button:focus {
+  opacity: 0.75;
+}
+.ant-carousel .slick-dots li.slick-active button {
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  opacity: 1;
+  border-radius: 100%;
+}
+.ant-carousel .slick-dots li.slick-active button:hover,
+.ant-carousel .slick-dots li.slick-active button:focus {
+  opacity: 1;
+}
+.slick-dots .slick-dots-bottom {
+  height: 22px;
+}
+
+.first, .second, .third {
+  height: 100%;
+  width: 100%;
+}
+div.ant-carousel > div.slick-slider.slick-initialized > div.slick-list > div.slick-track > div.slick-slide.slick-active.slick-current > div {
+  height: 100%;
+  width: 100%;
+}
+.first-container {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/lobby-rug.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+.second-container {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/ryan-christodoulou-Vra_DPrrBlE-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+.third-container {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/jonathan-stout-Pa-kKr31C7o-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+}
+/* .ant-carousel .slick-slide img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-self: flex-end;
+    position: relative;
+    top: -15rem;
+}
+
+.ant-carousel .slick-dots {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    top: -25em;
+}
+
+.ant-carousel .slick-dots li {
+    position: relative;
+    display: inline-block;
+    margin: 0 2px;
+    padding: 0;
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+    top: -61px;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    background: white;
+}
+.ant-carousel .slick-dots li.slick-active button {
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    opacity: 1;
+    border-radius: 100%;
+}
+
+.ant-carousel .slick-dots li button {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    padding: 0;
+    color: transparent;
+    font-size: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 1px;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.3;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .xxx {
+      height: 85vmin;
+      overflow: hidden;
+  }
+  .img-cont {
+      display: flex;
+      position: relative;
+      height: 100%;
+  }
+
+  .ant-carousel .slick-slide {   
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    height: 88vh;
+    line-height: 160px;
+    overflow: hidden;
+  }
+
+  .ant-carousel .slick-dots li button{
+    width: 20px;
+    height: 20px;
+    border-radius:100%;
+    display:flex;
+    margin:15px;
+  }
+  .ant-carousel .slick-dots li.slick-active button {
+    width: 20px;
+    background: #fff;
+    opacity: 1;
+    margin:15px;
+  }
+  .ant-carousel .slick-dots-bottom {
+    bottom: 5rem;
+    z-index:150000;
+  }
+  .slick-dots slick-dots-bottom {
+    display: flex;
+    justify-content: center;
+  }
+  .ant-carousel .slick-dots li button:hover, .ant-carousel .slick-dots li button:focus {
+    margin:15px;
+  }    */

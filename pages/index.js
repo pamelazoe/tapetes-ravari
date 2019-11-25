@@ -116,13 +116,26 @@ export default class Home extends React.Component {
           phone={this.props.topBanner.phone}
           email={this.props.topBanner.email}
         >
-          <HomeOverlay
+          <Carousel
+            style={{
+              // textAlign: "center",
+              // height: "2000px",
+              // lineHeight: "160px",
+              // background: "#364d79",
+              // overflow: "hidden",
+              // zIndex: "-100"
+            }}
+            img1={this.props.carousel.img1}
+            img2={this.props.carousel.img2}
+            img3={this.props.carousel.img3}
+          />
+          {/* <HomeOverlay
             line1={this.props.overlay.line1}
             line2={this.props.overlay.line2}
             text={this.props.overlay.text}
             button1={this.props.overlay.button1}
             button2={this.props.overlay.button2}
-          />
+          /> */}
           {/* <CarouselV3
             style={{
               textAlign: "center",
@@ -141,19 +154,7 @@ export default class Home extends React.Component {
             button1={this.props.overlay.button1}
             button2={this.props.overlay.button2}
           /> */}
-          <Carousel
-            style={{
-              // textAlign: "center",
-              // height: "2000px",
-              // lineHeight: "160px",
-              // background: "#364d79",
-              // overflow: "hidden",
-              // zIndex: "-100"
-            }}
-            img1={this.props.carousel.img1}
-            img2={this.props.carousel.img2}
-            img3={this.props.carousel.img3}
-          />
+          
           <Catalog
             cat1={this.props.catalog.cat1}
             cat2={this.props.catalog.cat2}

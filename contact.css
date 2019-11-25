@@ -36,57 +36,6 @@ textarea.ant-input {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
-  .ant-menu-horizontal .ant-menu-item,
-  .ant-menu-horizontal .ant-menu-submenu {
-    margin-top: -1px;
-  }
-  .ant-menu-horizontal > .ant-menu-item:hover,
-  .ant-menu-horizontal > .ant-menu-item-active,
-  .ant-menu-horizontal > .ant-menu-submenu .ant-menu-submenu-title:hover {
-    background-color: transparent;
-  }
-  .ant-menu-item-selected {
-    color: transparent;
-  }
-  .ant-menu-item-selected > a,
-  .ant-menu-item-selected > a:hover {
-    color: transparent;
-  }
-  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-    background-color: #e6f7ff;
-  }
-  .ant-menu-inline,
-  .ant-menu-vertical,
-  .ant-menu-vertical-left {
-    border-right: 1px solid #e8e8e8;
-  }
-  
-  
-  .ant-menu-horizontal > .ant-menu-item:hover,
-  .ant-menu-horizontal > .ant-menu-submenu:hover,
-  .ant-menu-horizontal > .ant-menu-item-active,
-  .ant-menu-horizontal > .ant-menu-submenu-active,
-  .ant-menu-horizontal > .ant-menu-item-open,
-  .ant-menu-horizontal > .ant-menu-submenu-open,
-  .ant-menu-horizontal > .ant-menu-item-selected,
-  .ant-menu-horizontal > .ant-menu-submenu-selected {
-    color: transparent;
-    border-bottom: solid 2px transparent;
-  }
-  .ant-menu-horizontal > .ant-menu-item > a {
-    display: block;
-    color: rgba(0, 0, 0, 0.65);
-  }
-  .ant-menu-horizontal > .ant-menu-item > a:hover {
-    color: black;
-  }
-  .ant-menu-horizontal > .ant-menu-item > a::before {
-    bottom: -2px;
-  }
-  .ant-menu-horizontal > .ant-menu-item-selected > a {
-    color: black;
-  }
-  
   .ant-input:focus {
     border-color: white;
     border-right-width: 1px !important;

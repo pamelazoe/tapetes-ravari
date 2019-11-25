@@ -10,7 +10,7 @@ const Contact = ({
   schedule
 }) => (
   <div
-    className="contact-section"
+    id="contact-section"
     style={{ backgroundColor: "black", color: "white", height:"30rem", display:"flex", justifyContent:"center", alignItems:"center" }}
   >
     <Row type="flex" justify="center">

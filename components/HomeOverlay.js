@@ -1,19 +1,20 @@
 import React from 'react';
 import { Typography, Button, Row, Col } from 'antd';
+import '../styles/homeoverlay.css'
 
 const { Text, Title } = Typography;
 
 const HomeOverlay = ({line1, line2, text, button1, button2}) => (
     <div className="color-overlay" 
         style={{
-            zIndex:"50",
-            position:"absolute",
-            top:"20vh",
-            width:"100%",
-            height:"35rem",
-            backgroundColor:"transparent",
-            display:"flex",
-            alignItems:"center"
+            // zIndex:"50",
+            // position:"absolute",
+            // top:"20vh",
+            // width:"100%",
+            // height:"35rem",
+            // backgroundColor:"transparent",
+            // display:"flex",
+            // alignItems:"center"
         }} >
         <Row type="flex" justify="start" align="middle">
         <Col span={18} push={5} >
