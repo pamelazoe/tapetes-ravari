@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { Carousel } from "antd";
+import { Carousel, Row, Col, Typography, Button } from "antd";
+import CarouselOverlay from "./CarouselOverlay"
+const { Text, Title } = Typography;
 import "../styles/carousel.css";
 
 class Slides extends Component {
@@ -8,6 +10,29 @@ class Slides extends Component {
   }
   render() {
     return (
+      <div className="carousel-overlay">
+       <div className="color-overlay">
+        <Row type="flex" justify="center" align="middle">
+        <Col
+        xs={24}
+        // span={18}
+        // push={5}
+        >
+        <div className="main-header">{this.props.line1.toUpperCase()}</div>
+        <div className="sub-header">{this.props.line2.toUpperCase()}</div>
+        <div className="text-content">{this.props.text}</div>
+        <div className="overlay-buttons">
+        <Button shape="round" id="brown">
+          {this.props.button1.toUpperCase()}
+        </Button>
+        <Button shape="round" id="black">
+          {this.props.button2.toUpperCase()}
+        </Button>
+        </div>
+       
+        </Col>
+        </Row>
+    </div>
       <div className="carousel">
         <Carousel
           autoplay="true"
@@ -32,6 +57,7 @@ class Slides extends Component {
             <div className="third-container" />
           </div>
         </Carousel>
+      </div>
       </div>
     );
   }

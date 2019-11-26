@@ -1,8 +1,6 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
 import Carousel from "../components/Carousel";
-//import CarouselV3 from "../components/CarouselV3";
-import HomeOverlay from "../components/HomeOverlay";
 import PageFooter from "../components/Footer";
 import Contact from "../components/Contact";
 import Gallery from "../components/Gallery";
@@ -117,44 +115,15 @@ export default class Home extends React.Component {
           email={this.props.topBanner.email}
         >
           <Carousel
-            style={{
-              // textAlign: "center",
-              // height: "2000px",
-              // lineHeight: "160px",
-              // background: "#364d79",
-              // overflow: "hidden",
-              // zIndex: "-100"
-            }}
             img1={this.props.carousel.img1}
             img2={this.props.carousel.img2}
             img3={this.props.carousel.img3}
+            line1={this.props.overlay.line1}
+            line2={this.props.overlay.line2}
+            text={this.props.overlay.text}
+            button1={this.props.overlay.button1}
+            button2={this.props.overlay.button2}
           />
-          {/* <HomeOverlay
-            line1={this.props.overlay.line1}
-            line2={this.props.overlay.line2}
-            text={this.props.overlay.text}
-            button1={this.props.overlay.button1}
-            button2={this.props.overlay.button2}
-          /> */}
-          {/* <CarouselV3
-            style={{
-              textAlign: "center",
-              height: "10%",
-              lineHeight: "160px",
-              background: "#364d79",
-               overflow: "hidden",
-               zIndex: "-100"
-            }}
-            img1={this.props.carousel.img1}
-            img2={this.props.carousel.img2}
-            img3={this.props.carousel.img3}
-            line1={this.props.overlay.line1}
-            line2={this.props.overlay.line2}
-            text={this.props.overlay.text}
-            button1={this.props.overlay.button1}
-            button2={this.props.overlay.button2}
-          /> */}
-          
           <Catalog
             cat1={this.props.catalog.cat1}
             cat2={this.props.catalog.cat2}
@@ -166,8 +135,6 @@ export default class Home extends React.Component {
             text2={this.props.about.text2}
             text3={this.props.about.text3}
             />
-
-          
           <ServicesSection
             sectionHeader={this.props.services.sectionHeader}
             cleaningHeader={this.props.services.cleaningHeader}
@@ -177,7 +144,6 @@ export default class Home extends React.Component {
             repairContent={this.props.services.repairContent}
             saleContent={this.props.services.saleContent}
           />
-        
           <ExtraInfo 
             headerInfo={this.props.extraInfo.headerInfo}
             contentInfo={this.props.extraInfo.contentInfo}
@@ -203,35 +169,3 @@ export default class Home extends React.Component {
     );
   }
 }
-
-// const Home = () => (
-//     <div>
-//         <Layout>
-//      <HomeOverlay
-//         line1="La mejor calidad"
-//         line2="para tu hogar"
-//         text="Then it's time to get your beak wet tonight playa! Sometimes science is a lot more art, than science. A lot of people don't get that."
-//         button1="Conocenos"
-//         button2="Cotiza" />
-//   <Carousel  style={{textAlign: "center", height: "2000px", lineHeight: "160px", background: "#364d79", overflow: "hidden", zIndex:"-100"}} />
-//   <Catalog />
-//   <ServicesSection cleaningHeader="Limpieza de tapetes" repairHeader="Reparación de tapetes" saleHeader="Venta de tapetes"
-//   cleaningContent="That just sounds like slavery with extra steps. He threatened to turn me in to the government, so I made him and the government go away! I know you're real because i have a ton of bad memories with you."
-//   repairContent="This isn't Game of Thrones, Morty. I can finally go on that trip I've been talking about. I love morty and i hope morty loves me. I want to wrap my arms around him and feel him deep inside me. A price for everything."
-//   saleContent="Rick, I don't like glowing rocks in the kitchen trash! God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank me. I'd like to order one large person with extra people please."
-//   />
-//  </Layout>
-//  <BackTop/>
-//  <style jsx>{`
-//       `}</style>
-
-//  </div>
-//   )
-
-// Home.getInitialProps = async () => {
-//   const res = await fetch({Data})
-//   const data = await res;
-//   return data;
-// }
-
-// export default Home
