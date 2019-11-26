@@ -218,7 +218,7 @@
       display: flex;
       justify-content: flex-start;
       color:white;
-      font-size: 2.9rem;
+      font-size: 5.8vh;
       letter-spacing: 0.06em;
       font-weight: 600;
  }
@@ -226,7 +226,7 @@
       display: flex;
       justify-content: flex-start;
       color:white;
-      font-size: 2.9rem;
+      font-size:5.8vh;
       letter-spacing: 0.06em;
       font-weight: 300;
  }
@@ -236,9 +236,9 @@
       color:white;
       text-align: center;
       margin: 15px 0px;
-      font-size: 1rem;
+      font-size: 2vh;
       font-weight: 300;
-      width: 50%;
+      width: 55%;
       text-align: start;
       letter-spacing: 0.06em;
  }
@@ -252,13 +252,13 @@
       width: 11rem;
       margin: 30px 40px 0 0;
       color: white;
-      font-size: 1rem;
+      font-size: 2vh;
       letter-spacing: 0.1em;
       border:none;
  }
  .ant-row-flex.ant-row-flex-center.ant-row-flex-middle.overlay-content {
    position: relative;
-   top:2em;
+   top:3em;
    width: 100vmax;
  }
   #brown {
