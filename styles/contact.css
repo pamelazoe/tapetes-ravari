@@ -1,0 +1,36 @@
+@media (max-width: 576px){
+    .ant-col.ant-col-xs-24.ant-col-xl-10 {
+        padding: 0px 3rem;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+    #contact-section {
+        background-color: black;
+        color: white;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 2rem 0 1.5rem 0;
+    }
+}
+@media (min-width: 577px){
+.ant-col.ant-col-xs-24.ant-col-xl-10 {
+    padding: 0px 6rem;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+#contact-section {
+    background-color: black;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 3rem 0 2rem 0;
+}
+}

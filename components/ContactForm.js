@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Icon, Input, Button, Row, Col } from 'antd';
-import "../contact.css"
+import "../styles/contactform.css"
 const { TextArea } = Input;
 
 class ContactForm extends React.Component {
@@ -8,33 +8,50 @@ class ContactForm extends React.Component {
     return (
       <div>
       <Form layout="horizontal">
-        <Row style={{color:"white"}}>
+        <Row>
           
-          <Col span={12} style={{paddingRight:"5px"}}>
+          <Col
+          span={12}
+          xl={12}
+          lg={12}
+          xs={24}
+          //style={{paddingRight:"5px"}}
+          >
           <Row>
             Nombre
             </Row>
-        <Form.Item style={{padding:"0", margin:"0"}}> 
+        <Form.Item> 
             <Input
             />
         </Form.Item>
         </Col>
-        <Col span={12} style={{paddingLeft:"5px"}}>
+        <Col
+        className="email"
+        span={12}
+        xl={12}
+        lg={12}
+        xs={24}
+        >
         <Row>
             Email
             </Row>
-        <Form.Item style={{padding:"0", margin:"0"}}>
+        <Form.Item>
             <Input
             />
         </Form.Item>
         </Col>
         </Row>
-        <Row style={{color:"white"}}>
-          <Col span={24}>
+        <Row>
+          <Col
+          span={24}
+          xl={24}
+          lg={24}
+          xs={24}
+          >
           <Row>
             Ubicación
             </Row>
-        <Form.Item style={{margin:"0"}}>
+        <Form.Item>
             <Input typestyle={{ width: '100%', marginRight: '3%'}}
             />
         </Form.Item>
@@ -52,15 +69,24 @@ class ContactForm extends React.Component {
         </Col>
         </Row>
         <Row style={{color:"white"}}>
-        <Col span={12}>
+        <Col
+        span={12}
+        xl={12}
+        lg={12}
+        xs={24}
+        >
         
           <Form.Item>
-          <Button htmlType="submit" style={{backgroundColor:"#7E764F", borderColor:"#7E764F", color:"white", width:"100%"}}>
+          <Button className="send-form" htmlType="submit" style={{backgroundColor:"#7E764F", borderColor:"#7E764F", color:"white", width:"100%"}}>
             Enviar
           </Button>
         </Form.Item>
         </Col>
-          <Col span={12} />
+          <Col
+          span={12}
+          xl={12}
+          lg={12}
+          />
         </Row>
         </Form>
       </div>

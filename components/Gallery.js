@@ -1,21 +1,45 @@
 import React from "react";
 import { Row, Col } from "antd";
+import "../styles/gallery.css"
 
 const Gallery = ({ thmb1, thmb2, thmb3, thmb4, thmb5 }) => (
   <div className="gallery-section">
     <Row type="flex" justify="end" align="middle">
-      <Col span={2}></Col>
-      <Col span={20} style={{ display: "flex", justifyContent: "flex-end"}}>
+      <Col
+      span={2}
+      xl={2}
+      xs={1}
+      />
+      <Col
+      span={20}
+      xl={20}
+      xs={22}
+      style={{ display: "flex", justifyContent: "flex-end"}}>
+        <div className="insta-follow">
         <h1>Síguenos en Instagram</h1>
+        </div>
       </Col>
-      <Col span={2}></Col>
+      <Col
+      span={2}
+      xl={2}
+      xs={1}
+      ></Col>
     </Row>
     <Row type="flex" justify="end" align="middle" style={{marginBottom:"4rem"}}>
-      <Col span={2}></Col>
-      <Col span={20} style={{ display: "flex", justifyContent: "flex-end", fontSize:"1rem" }}>
+      <Col
+      span={2}
+      xl={2}
+      ></Col>
+      <Col
+      span={20}
+      xl={20}
+      style={{ display: "flex", justifyContent: "flex-end", fontSize:"1rem" }}>
         <a href="https://www.instagram.com/tapetesravari/">@ tapetesravari</a>
       </Col>
-      <Col span={2}></Col>
+      <Col
+      span={2}
+      xl={2}
+      />
     </Row>
     <div className="square-container">
       <div className="square">
