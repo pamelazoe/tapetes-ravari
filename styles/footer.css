@@ -1,0 +1,110 @@
+@media (max-width: 576px) {
+    footer {
+        overflow: hidden;
+    }
+    footer.footer-wraper.ant-layout-footer {
+        background-color: rgb(126, 118, 79);
+        height: 25rem;
+        display: flex;
+        place-content: space-around space-between;
+        flex-direction: column;
+        background-image: url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
+    }
+    .ant-col.ant-col-8.socialmedia-icons {
+        display: flex;
+        justify-content: center;
+    }
+    .ant-col.ant-col-8.socialmedia-icons > a > img {
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+    }
+    .ant-col.ant-col-8.logo-white {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ant-col.ant-col-8.logo-white img {
+        width: 10rem;
+    }
+    .ant-col.ant-col-14.by-legal-terms{
+        height: 5rem;
+    }
+    .legal {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+    }
+    .legal a {
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+    .ant-divider ant-divider-vertical {
+        position: relative;
+        top: 15px;
+    }
+    a {
+        padding: 0;
+    }
+}
+/* @media (min-width: 576px){ */
+footer {
+    overflow: hidden;
+}
+footer.footer-wraper.ant-layout-footer {
+    background-color: rgb(126, 118, 79);
+    height: 28rem;
+    display: flex;
+    place-content: space-around space-between;
+    flex-direction: column;
+    background-image: url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
+}
+.ant-col.ant-col-8.socialmedia-icons {
+    display: flex;
+    justify-content: center;
+}
+.ant-col.ant-col-8.socialmedia-icons > a > img {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.ant-col.ant-col-8.logo-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ant-col.ant-col-8.logo-white img {
+    width: 12rem;
+}
+.ant-col.ant-col-14.by-legal-terms{
+    height: 5rem;
+}
+.legal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.legal a {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.ant-divider ant-divider-vertical {
+    position: relative;
+    top: 15px;
+}
+a {
+    padding: 0;
+}
+/* } */

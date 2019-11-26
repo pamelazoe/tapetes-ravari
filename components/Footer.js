@@ -1,93 +1,45 @@
 import React from "react";
 import { Row, Col, Layout, Divider, Icon } from "antd";
-
+import "../styles/footer.css";
 
 const { Footer, Content } = Layout;
 
 const PageFooter = ({ by, legal, terms }) => (
   <footer>
-    <Footer style={{ backgroundColor: "#7E764F", height: "28rem", display:"flex",
-                    justifyContent:"space-between", flexDirection:"column",
-                    alignContent:"space-around", backgroundImage: "url(https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png)",
-                    }}>
-      <Row
-        type="flex"
-        justify="space-between"
-        align="middle"
-        style={{ width: "100%"}}
-      >
-        <Col span={8} style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center"
-          }}>
-        
-        </Col>
+    <Footer className="footer-wraper">
+      <Row type="flex" justify="space-between" align="middle">
         <Col
           span={8}
-          style={{
-            display: "flex",
-            justifyContent: "center"
-          }}
-        >
+        />
+        <Col className="socialmedia-icons" span={8}>
           <a href="https://www.facebook.com/tapetesravari/">
-          <img style={{height:"70px", width:"70px", display:"flex", justifyContent:"center", margin:"30px"}} src="https://travari.s3-us-west-2.amazonaws.com/images/fblogo.png"></img>
+            <img src="https://travari.s3-us-west-2.amazonaws.com/images/fblogo.png" />
           </a>
-          <a href="https://www.instagram.com/tapetesravari/" >
-          <img style={{height:"70px", width:"70px", display:"flex", justifyContent:"center", margin:"30px"}} src="https://travari.s3-us-west-2.amazonaws.com/images/instalogo.png"></img>
+          <a href="https://www.instagram.com/tapetesravari/">
+            <img src="https://travari.s3-us-west-2.amazonaws.com/images/instalogo.png" />
           </a>
-          
         </Col>
-        <Col span={8} style={{ height: "10rem" }}></Col>
+        <Col span={8} />
       </Row>
-      <Row
-        type="flex"
-        justify="center"
-        align="middle"
-        style={{ display: "flex", justifyContent: "center" }}
-      >
-        
-        <Col span={8}></Col>
-        <Col
-          span={8}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center"
-          }}
-        >
+      <Row type="flex" justify="center" align="middle">
+        <Col span={8} />
+        <Col className="logo-white" span={8}>
           <img
             src="https://travari.s3-us-west-2.amazonaws.com/images/travari-logo-white.png"
-            style={{ width: "12rem" }}
             alt=""
           ></img>
         </Col>
         <Col span={8}></Col>
       </Row>
       <Row type="flex" justify="center" align="middle">
-        <Col span={5} style={{ height: "5rem" }}></Col>
-        <Col span={14} style={{ height: "5rem" }}>
-          <div
-            className="legal"
-            style={{
-              height: "100%",
-              width: "100%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              margin:"15px"
-            }}
-          >
-            <a
-              href="#"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                color: "white"
-              }}
-            >
-              {by}
-            </a>
+        <Col
+        span={5}
+        xl={5}
+        xs={0}
+        />
+        <Col span={14} className="by-legal-terms">
+          <div className="legal">
+            <a href="#">{by}</a>
             <Divider
               type="vertical"
               style={{
@@ -98,16 +50,7 @@ const PageFooter = ({ by, legal, terms }) => (
                 height: "30px"
               }}
             />
-            <a
-              href="#"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                color: "white"
-              }}
-            >
-              {legal}
-            </a>
+            <a href="#">{legal}</a>
             <Divider
               type="vertical"
               style={{
@@ -118,30 +61,15 @@ const PageFooter = ({ by, legal, terms }) => (
                 height: "30px"
               }}
             />
-            <a
-              href="#"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                color: "white"
-              }}
-            >
-              {terms}
-            </a>
+            <a href="#">{terms}</a>
           </div>
         </Col>
-        <Col span={5} style={{ height: "5rem" }}></Col>
+        <Col
+        span={5}
+        xl={5}
+        xs={0}
+        />
       </Row>
-
-      <style jsx>{`
-        .ant-divider ant-divider-vertical {
-          position: relative;
-          top: 15px;
-        }
-        a {
-          padding: 0;
-        }
-      `}</style>
     </Footer>
   </footer>
 );

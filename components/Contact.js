@@ -11,7 +11,7 @@ const Contact = ({
 }) => (
   <div
     id="contact-section"
-    style={{ backgroundColor: "black", color: "white", height:"30rem", display:"flex", justifyContent:"center", alignItems:"center" }}
+    style={{ backgroundColor: "black", color: "white", height:"30rem", display:"flex", justifyContent:"center", alignItems:"center", overflow:"hidden" }}
   >
     <Row type="flex" justify="center">
       <Col span={2} style={{backgroundColor:"transparent"}}/>
