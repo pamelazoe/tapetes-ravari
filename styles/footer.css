@@ -54,12 +54,19 @@
         display: flex;
         justify-content: space-between;
         text-align: center;
+        color: white;
     }
     .link-text {
         display: flex;
         justify-content: center;
         width: 30%;
         height: 100%;
+    }
+    .link-text > {
+        color:white;
+    }
+    .legal > .link-text > a {
+        color: white;
     }
     .ant-divider ant-divider-vertical {
         position: relative;
@@ -124,4 +131,13 @@ footer.footer-wraper.ant-layout-footer {
 a {
     padding: 0;
 }
+.link-text > a {
+    color:white;
+}
+}
+.legal > .link-text > {
+    color:white;
+}
+.link-text {
+    color: white;
 }

@@ -12,9 +12,20 @@ class Slides extends Component {
     return (
       <div className="carousel-overlay">
        <div className="color-overlay">
-        <Row type="flex" justify="center" align="middle">
+        <Row 
+        className="overlay-content"
+        type="flex" justify="center" align="middle" style={{width:"100%"}}>
+          <Col
+          xs={0}
+          md={0}
+          gd={0}
+          xl={1}
+          />
         <Col
         xs={24}
+        md={24}
+        gd={24}
+        xl={22}
         // span={18}
         // push={5}
         >
@@ -31,6 +42,12 @@ class Slides extends Component {
         </div>
        
         </Col>
+        <Col
+          xs={0}
+          md={0}
+          gd={0}
+          xl={1}
+          />
         </Row>
     </div>
       <div className="carousel">

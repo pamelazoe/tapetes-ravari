@@ -1,195 +1,396 @@
 @media (max-width: 576px) {
   .carousel-overlay {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  /********** Overlay **********/
-.color-overlay {
-  width: 100%;
-  position: absolute;
-  top:0;
-  left: 0;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  z-index: 9;
-  overflow: hidden;
-  padding: 10% 10% 25% 10%;
-  background-color: rgb(0,0,0, 0.5);
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+ }
+ /********** Overlay **********/
+  .color-overlay {
+      width: 100%;
+      position: absolute;
+      top:0;
+      left: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      z-index: 9;
+      overflow: hidden;
+      padding: 10% 10% 25% 10%;
+      background-color: rgb(0,0,0, 0.5);
+ }
+  .main-header {
+      display: flex;
+      justify-content: center;
+      color:white;
+      font-size: 7vmin;
+      letter-spacing: 0.1em;
+      font-weight: 900;
+ }
+  .sub-header {
+      display: flex;
+      justify-content: center;
+      color:white;
+      font-size: 6.5vmin;
+      letter-spacing: 0.1em;
+      font-weight: 300;
+ }
+  .text-content {
+      display: flex;
+      justify-content: center;
+      color:white;
+      text-align: center;
+      margin: 15px 0px;
+      font-size: 4vmin;
+      font-weight: 300;
+ }
+  .overlay-buttons {
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+ }
+  .overlay-buttons button {
+      height: 2.5rem;
+      width: 7.7rem;
+      margin: 0 15px;
+      color: rgb(213, 213, 213);
+      font-size: 0.8em;
+      letter-spacing: 0.1em;
+      border:none;
+ }
+  #brown {
+      background-color: #7E764F;
+ }
+  #black {
+      background-color: black;
+ }
+ /********** Carousel **********/
+  .carousel {
+      height: 65vmax;
+      background: black;
+      background-color: black;
+      z-index: -2;
+ }
+  .ant-carousel {
+      height: 100%;
+ }
+  .ant-carousel .slick-slider {
+      height: 100%;
+ }
+  .slick-track {
+      height: 100%;
+ }
+  .slick-list {
+      height: 100%;
+ }
+  .slick-slide {
+      height: 100%;
+ }
+  .ant-carousel .slick-slide {
+      height: 100%;
+      background: black !important;
+      background-color: black !important;
+ }
+  .slick-slide .slick-cloned {
+      height: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+ }
+  .ant-carousel .slick-list .slick-slide.slick-active{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+ }
+  .slick-slide .slick-active .slick-current {
+      position: relative;
+      display: flex;
+      justify-content: center;
+ }
+  .slick {
+      height: 100%;
+ }
+  .ant-carousel .slick-next {
+      height: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+ }
+  .ant-carousel .slick-initialized .slick-slide {
+      height: 100%;
+ }
+  .ant-carousel .slick-dots-bottom {
+      bottom: 60px;
+      z-index: 100;
+ }
+  .ant-carousel .slick-dots li button {
+      width: 22px;
+      height: 22px;
+      border-radius: 100%;
+      margin: 0px 8px;
+ }
+  .ant-carousel .slick-dots li button:hover, .ant-carousel .slick-dots li button:focus {
+      opacity: 0.75;
+ }
+  .ant-carousel .slick-dots li.slick-active button {
+      width: 22px;
+      height: 22px;
+      background: #fff;
+      opacity: 1;
+      border-radius: 100%;
+ }
+  .ant-carousel .slick-dots li.slick-active button:hover, .ant-carousel .slick-dots li.slick-active button:focus {
+      opacity: 1;
+ }
+  .slick-dots .slick-dots-bottom {
+      height: 22px;
+ }
+  .first, .second, .third {
+      height: 100%;
+      width: 100%;
+ }
+  div.ant-carousel > div.slick-slider.slick-initialized > div.slick-list > div.slick-track > div.slick-slide.slick-active.slick-current > div {
+      height: 100%;
+      width: 100%;
+ }
+  .first-container {
+      height: 100%;
+      width: 100%;
+      background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/lobby-rug.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+ }
+  .second-container {
+      height: 100%;
+      width: 100%;
+      background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/ryan-christodoulou-Vra_DPrrBlE-unsplash.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+ }
+  .third-container {
+      height: 100%;
+      width: 100%;
+      background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/jonathan-stout-Pa-kKr31C7o-unsplash.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+ }
 }
-.main-header {
-  display: flex;
-  justify-content: center;
-  color:white;
-  font-size: 7vmin;
-  letter-spacing: 0.1em;
-  font-weight: 900;
-}
-.sub-header {
-  display: flex;
-  justify-content: center;
-  color:white;
-  font-size: 6.5vmin;
-  letter-spacing: 0.1em;
-  font-weight: 300;
-}
-.text-content {
-  display: flex;
-  justify-content: center;
-  color:white;
-  text-align: center;
-  margin: 15px 0px;
-  font-size: 4vmin;
-  font-weight: 300;
-}
-.overlay-buttons {
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-}
-.overlay-buttons button {
-  height: 2.5rem;
-  width: 50%;
-  margin: 0 15px;
-  color: white;
-  font-size: 4vmin;
-}
-#brown {
-  background-color: #7E764F;
-}
-#black {
-  background-color: black;
-}
-/********** Carousel **********/
-.carousel {
-  height: 65vmax;
-  background: black;
-  background-color: black;
-  z-index: -2;
-}
-.ant-carousel {
-  height: 100%;
-}
-.ant-carousel .slick-slider {
-  height: 100%;
-}
-.slick-track {
-  height: 100%;
-}
-.slick-list {
-  height: 100%;
-}
-.slick-slide {
-  height: 100%;
-}
-.ant-carousel .slick-slide {
-  height: 100%;
-  background: black !important;
-  background-color: black !important;
-}
-.slick-slide .slick-cloned {
-  height: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.ant-carousel .slick-list .slick-slide.slick-active{
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.slick-slide .slick-active .slick-current {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.slick {
-  height: 100%;
-}
-.ant-carousel .slick-next {
-  height: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.ant-carousel .slick-initialized .slick-slide {
-  height: 100%;
-}
-.ant-carousel .slick-dots-bottom {
-  bottom: 60px;
-  z-index: 100;
-}
-.ant-carousel .slick-dots li button {
-  width: 22px;
-  height: 22px;
-  border-radius: 100%;
-  margin: 0px 8px;
-}
-.ant-carousel .slick-dots li button:hover,
-.ant-carousel .slick-dots li button:focus {
-  opacity: 0.75;
-}
-.ant-carousel .slick-dots li.slick-active button {
-  width: 22px;
-  height: 22px;
-  background: #fff;
-  opacity: 1;
-  border-radius: 100%;
-}
-.ant-carousel .slick-dots li.slick-active button:hover,
-.ant-carousel .slick-dots li.slick-active button:focus {
-  opacity: 1;
-}
-.slick-dots .slick-dots-bottom {
-  height: 22px;
-}
-
-.first, .second, .third {
-  height: 100%;
-  width: 100%;
-}
-div.ant-carousel > div.slick-slider.slick-initialized > div.slick-list > div.slick-track > div.slick-slide.slick-active.slick-current > div {
-  height: 100%;
-  width: 100%;
-}
-.first-container {
-  height: 100%;
-  width: 100%;
-  background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/lobby-rug.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
-}
-.second-container {
-  height: 100%;
-  width: 100%;
-  background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/ryan-christodoulou-Vra_DPrrBlE-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
-}
-.third-container {
-  height: 100%;
-  width: 100%;
-  background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/jonathan-stout-Pa-kKr31C7o-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
-}
+@media (min-width: 576px) {
+  .carousel-overlay {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+ }
+ /********** Overlay **********/
+  .color-overlay {
+      width: 100vmax;
+      position: absolute;
+      top:0;
+      left: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      z-index: 9;
+      overflow: hidden;
+      padding: 10% 10% 25% 10%;
+      background-color: rgb(0,0,0, 0.5);
+ }
+  .main-header {
+      display: flex;
+      justify-content: flex-start;
+      color:white;
+      font-size: 2.9rem;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+ }
+  .sub-header {
+      display: flex;
+      justify-content: flex-start;
+      color:white;
+      font-size: 2.9rem;
+      letter-spacing: 0.06em;
+      font-weight: 300;
+ }
+  .text-content {
+      display: flex;
+      justify-content: flex-start;
+      color:white;
+      text-align: center;
+      margin: 15px 0px;
+      font-size: 1rem;
+      font-weight: 300;
+      width: 50%;
+      text-align: start;
+      letter-spacing: 0.06em;
+ }
+  .overlay-buttons {
+      height: 3rem;
+      display: flex;
+      justify-content: flex-start;
+ }
+  .overlay-buttons button {
+      height: 3rem;
+      width: 11rem;
+      margin: 30px 40px 0 0;
+      color: white;
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      border:none;
+ }
+ .ant-row-flex.ant-row-flex-center.ant-row-flex-middle.overlay-content {
+   position: relative;
+   top:2em;
+   width: 100vmax;
+ }
+  #brown {
+      background-color: #7E764F;
+ }
+  #black {
+      background-color: black;
+ }
+ /********** Carousel **********/
+  .carousel {
+      height: 86vmin;
+      background: black;
+      background-color: black;
+      z-index: -2;
+ }
+  .ant-carousel {
+      height: 100%;
+ }
+  .ant-carousel .slick-slider {
+      height: 100%;
+ }
+  .slick-track {
+      height: 100%;
+ }
+  .slick-list {
+      height: 100%;
+ }
+  .slick-slide {
+      height: 100%;
+ }
+  .ant-carousel .slick-slide {
+      height: 100%;
+      background: black !important;
+      background-color: black !important;
+ }
+  .slick-slide .slick-cloned {
+      height: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+ }
+  .ant-carousel .slick-list .slick-slide.slick-active{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+ }
+  .slick-slide .slick-active .slick-current {
+      position: relative;
+      display: flex;
+      justify-content: center;
+ }
+  .slick {
+      height: 100%;
+ }
+  .ant-carousel .slick-next {
+      height: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+ }
+  .ant-carousel .slick-initialized .slick-slide {
+      height: 100%;
+ }
+  .ant-carousel .slick-dots-bottom {
+      bottom: 60px;
+      z-index: 100;
+ }
+  .ant-carousel .slick-dots li button {
+      width: 22px;
+      height: 22px;
+      border-radius: 100%;
+      margin: 0px 8px;
+ }
+  .ant-carousel .slick-dots li button:hover, .ant-carousel .slick-dots li button:focus {
+      opacity: 0.75;
+ }
+  .ant-carousel .slick-dots li.slick-active button {
+      width: 22px;
+      height: 22px;
+      background: #fff;
+      opacity: 1;
+      border-radius: 100%;
+ }
+  .ant-carousel .slick-dots li.slick-active button:hover, .ant-carousel .slick-dots li.slick-active button:focus {
+      opacity: 1;
+ }
+  .slick-dots .slick-dots-bottom {
+      height: 22px;
+ }
+  .first, .second, .third {
+      height: 100%;
+      width: 100%;
+ }
+  div.ant-carousel > div.slick-slider.slick-initialized > div.slick-list > div.slick-track > div.slick-slide.slick-active.slick-current > div {
+      height: 100%;
+      width: 100%;
+ }
+  .first-container {
+      height: 100%;
+      width: 100%;
+      background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/lobby-rug.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+ }
+  .second-container {
+      height: 100%;
+      width: 100%;
+      background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/ryan-christodoulou-Vra_DPrrBlE-unsplash.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+ }
+  .third-container {
+      height: 100%;
+      width: 100%;
+      background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/jonathan-stout-Pa-kKr31C7o-unsplash.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+ }
 }
