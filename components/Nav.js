@@ -39,7 +39,7 @@ class Nav extends React.Component {
                       <img
                         src="https://travari.s3-us-west-2.amazonaws.com/images/travari-logo.jpg"
                         style={{
-                          maxHeight: "3rem",
+                          maxHeight: "3.5rem",
                           display: "flex",
                           justifyContent: "flex-start",
                           margin: "0"

@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Layout, Divider, Icon } from "antd";
 import "../styles/footer.css";
+import { relative } from "path";
 
 const { Footer, Content } = Layout;
 
@@ -31,15 +32,24 @@ const PageFooter = ({ by, legal, terms }) => (
         </Col>
         <Col span={8}></Col>
       </Row>
-      <Row type="flex" justify="center" align="middle">
+      <Row type="flex" justify="center" align="middle"
+      style={{position:"relative", width:"100%"}}>
         <Col
         span={5}
         xl={5}
         xs={0}
         />
-        <Col span={14} className="by-legal-terms">
+        <Col
+        span={14}
+        xl={14}
+        xs={24}
+        className="by-legal-terms">
           <div className="legal">
-            <a href="#">{by}</a>
+          <div className="link-text">
+            <a href="#">
+              {by}
+              </a>
+              </div>
             <Divider
               type="vertical"
               style={{
@@ -50,7 +60,11 @@ const PageFooter = ({ by, legal, terms }) => (
                 height: "30px"
               }}
             />
-            <a href="#">{legal}</a>
+            <div className="link-text">
+            <a href="#">
+              {legal}
+              </a>
+              </div>
             <Divider
               type="vertical"
               style={{
@@ -61,8 +75,12 @@ const PageFooter = ({ by, legal, terms }) => (
                 height: "30px"
               }}
             />
-            <a href="#">{terms}</a>
-          </div>
+            <div className="link-text">
+            <a href="#">
+              {terms}
+              </a>
+              </div>
+              </div>
         </Col>
         <Col
         span={5}

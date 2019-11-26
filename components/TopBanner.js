@@ -12,8 +12,8 @@ const TopBanner = ({ phone, email }) => (
   <div className="join2" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
   <Icon type="phone" style={{transformOrigin:"0.5em 0.5em", height:"100%", fontSize:"16px", color:"white"}}/>
       {/* <div className="show-desktop-hide-mobile" style={{height:"100%", display:"flex", alignItems:"center", marginLeft:"0.4rem", color:"white"}}> */}
-        <a href="tel:(55) 5555 5555" style={{color:"#b6b6b6", display:"flex"}}>
-        <p>{phone}</p>
+        <a href="tel:(55) 5555 5555" style={{color:"white", display:"flex"}}>
+        <p style={{color:"white"}}>{phone}</p>
         </a>
       {/* </div> */}
       </div>
@@ -22,8 +22,8 @@ const TopBanner = ({ phone, email }) => (
       <div className="join2" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
       <Icon type="mail" style={{color:"white"}} />
       {/* <div className="show-desktop-hide-mobile" style={{height:"100%", display:"flex", alignItems:"center", marginLeft:"0.4rem"}}> */}
-        <a href="ventas@travari.mx" style={{color:"#b6b6b6", display:"flex"}}>
-        <p>{email}</p>
+        <a href="ventas@travari.mx" style={{color:"white", display:"flex"}}>
+        <p style={{color:"white"}}>{email}</p>
         </a>
       {/* </div> */}
       </div>

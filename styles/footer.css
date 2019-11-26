@@ -25,25 +25,41 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
     .ant-col.ant-col-8.logo-white img {
         width: 10rem;
     }
     .ant-col.ant-col-14.by-legal-terms{
         height: 5rem;
+        width: 100vmin;
     }
     .legal {
-        height: 100%;
-        width: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
-        margin: 15px;
+        margin: 0;
+        width: 100%;
+        padding:20px;
+        text-align: center;
+        font-size: 0.7rem;
+        position: relative;
     }
     .legal a {
         display: flex;
-        justify-content: center;
         color: white;
+        padding: 0;
+        margin: 0;
+    }
+    .legal > .link-text > a {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .link-text {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        height: 100%;
     }
     .ant-divider ant-divider-vertical {
         position: relative;
@@ -53,7 +69,7 @@
         padding: 0;
     }
 }
-/* @media (min-width: 576px){ */
+@media (min-width: 577px){
 footer {
     overflow: hidden;
 }
@@ -80,6 +96,7 @@ footer.footer-wraper.ant-layout-footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .ant-col.ant-col-8.logo-white img {
     width: 12rem;
@@ -107,4 +124,4 @@ footer.footer-wraper.ant-layout-footer {
 a {
     padding: 0;
 }
-/* } */
+}
