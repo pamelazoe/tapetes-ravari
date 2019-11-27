@@ -5,7 +5,7 @@ import "../styles/catalog.css"
 const Catalog = ({cat1, cat2}) => (
    //<div className="show-desktop-hide-mobile">
     <Row gutter={24} type="flex" justify="center" align="middle"
-    style={{margin:"3rem 0", width:"100%", height:"22rem", overflow:"hidden"}}>
+    style={{margin:"3rem 0", width:"100%", height:"25vmax", overflow:"hidden"}}>
         <Col xl={2} xs={0} md={2}/>
         <Col xl={20}
         xs={20}
