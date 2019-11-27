@@ -161,9 +161,7 @@ export default class Home extends React.Component {
           thmb5={this.props.gallery.thumb5}
           />
         </Layout>
-        <BackTop />
         <style  jsx>{`
-        
         `}</style>
       </div>
     );

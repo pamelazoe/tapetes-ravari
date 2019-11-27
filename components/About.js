@@ -11,9 +11,10 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
       justify="center"
       align="middle"
     >
-      <Col xl={2} xs={0}></Col>
+      <Col xl={2} md={2} xs={0}></Col>
       <Col
         xl={12}
+        md={14}
         xs={22}
         style={{
           display: "flex",
@@ -26,6 +27,7 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
         <Col 
         span={16}
         xl={16}
+        md={18}
         xs={22}
         >
           <div className="title">{title}</div>
@@ -37,11 +39,11 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
             ></Col>
           </Row>
         </Col>
-        <Col span={6}></Col>
+        <Col span={6} md={6}/>
       </Col>
       <Col
       className="img-right-1"
-        xl={4} xs={0}
+        xl={4} md={0} xs={0}
       >
         <div
           style={{
@@ -70,6 +72,7 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
       <Col
       className="img-right-2"
         xl={4}
+        md={6}
         xs={0}
       >
         <div
@@ -87,23 +90,26 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
           ></img>
         </div>
       </Col>
-      <Col xl={2} xs={0}></Col>
+      <Col xl={2} md={2} xs={0}></Col>
     </Row>
     <Row>
       <Col
       span={2}
       xl={2}
+      md={2}
       xs={0}
       />
       <Col
       span={12}
       xl={12}
+      md={14}
       xs={24}
       >
         <Col
           className="img-container"
           span={12}
           xl={12}
+          md={12}
           xs={24}
         >
           <img src="https://travari.s3-us-west-2.amazonaws.com/images/sustainable.jpg"
@@ -113,6 +119,7 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
         className="text-content1"
         span={12}
         xl={12}
+        md={12}
         xs={24}
         >
           <p>{text1}</p>
@@ -154,6 +161,7 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
       className="text-secondary"
       span={8}
       xl={8}
+      md={6}
       xs={24}
       //style={{ padding: "15px 15px" }}
       >
@@ -177,6 +185,7 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
       <Col
       span={2}
       xl={2}
+      md={2}
       xs={0}
       />
     </Row>

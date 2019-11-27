@@ -3,6 +3,8 @@ import Nav from './Nav';
 import TopBanner from './TopBanner'
 import PageFooter from './Footer'
 import Contact from './Contact'
+import { BackTop } from "antd";
+import "../styles/index.css"
 
 const Layout = ({children, phone, email, home, about, services, contact, by, legal, terms,
                   contactTitle, contactContent, contactPhone, location, schedule}) => (    
@@ -20,6 +22,7 @@ const Layout = ({children, phone, email, home, about, services, contact, by, leg
       <PageFooter 
       by={by} legal={legal} terms={terms}
       />
+      <BackTop />
     </div>
 )
 

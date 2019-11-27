@@ -19,13 +19,23 @@
   .info-content > ul > li {
       color: black;
   }
+  .ant-col.ant-col-10.head-extra-info.ant-col-xs-24.ant-col-xl-10 {
+      padding: 0;
+  }
+  .extra-info-image {
+    display: flex;
+    justify-content: center;
+}
+.extra-info-image > img {
+    height: 25rem;
+}
 
   @media (max-width: 576px) {
     .info-content {
         margin: 20px 5px 0 0;
         padding: 0;
     }
-    .extra-info-image{
+    .extra-info-image {
         display: flex;
         justify-content: center;
     }

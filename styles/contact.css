@@ -18,7 +18,7 @@
 }
 @media (min-width: 577px){
 .ant-col.ant-col-xs-24.ant-col-xl-10 {
-    padding: 0px 6rem;
+    /* padding: 0px 6rem; */
     height: 100%;
     display: flex;
     flex-flow: column;

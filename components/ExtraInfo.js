@@ -8,11 +8,14 @@ const ExtraInfo = ({headerInfo, contentInfo, li1, li2, li3, li4, li5}) => (
             <Col
             span={2}
             xl={2}
+            md={2}
             xs={0}
             />
             <Col
+            className="head-extra-info"
             span={10}
             xl={10}
+            md={10}
             xs={24}
             >
             <div className="info-head">{headerInfo}</div>
@@ -20,6 +23,7 @@ const ExtraInfo = ({headerInfo, contentInfo, li1, li2, li3, li4, li5}) => (
             <Col
               span={23}
               xl={23}
+              md={24}
               pull={8}
               style={{
                 backgroundImage:
@@ -50,6 +54,7 @@ const ExtraInfo = ({headerInfo, contentInfo, li1, li2, li3, li4, li5}) => (
             <Col
             span={10}
             xl={10}
+            md={10}
             xs={24}
             style={{overflow:"hidden"}}>
             <Row className="extra-info-image" type="flex" align="middle" justify="center">
@@ -60,6 +65,7 @@ const ExtraInfo = ({headerInfo, contentInfo, li1, li2, li3, li4, li5}) => (
             <Col
             span={2}
             xl={2}
+            md={2}
             xs={0}
             />
         </Row>

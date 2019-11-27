@@ -34,7 +34,7 @@ class Nav extends React.Component {
               >
                 <Col span={2} xl={2}/>
                 <Col span={10} xl={10}>
-                  <Link href="/#contact">
+                  <Link href="/">
                     <a>
                       <img
                         src="https://travari.s3-us-west-2.amazonaws.com/images/travari-logo.jpg"

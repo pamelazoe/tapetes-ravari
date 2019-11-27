@@ -17,15 +17,17 @@ const Contact = ({
     <Row type="flex" justify="center" align="middle">
       <Col
       //span={2}
-      xl={2}
-      lg={2}
+      xl={3}
+      md={2}
+      lg={3}
       xs={0}
       style={{backgroundColor:"transparent"}}
       />
       <Col
         //span={10}
-        xl={10}
-        lg={10}
+        xl={7}
+        lg={8}
+        md={9}
         xs={24}
         // style={{
         //   padding: "0 6rem",
@@ -34,10 +36,12 @@ const Contact = ({
         //   flexFlow: "column",
         // }}
       >
+       
         <Col
         span={2}
         xl={2}
         lg={2}
+        md={2}
         xs={0}
         />
         <div className="contact-title" >
@@ -52,6 +56,7 @@ const Contact = ({
           <Col
           span={2}
           xs={2}
+          md={2}
           lg={2}
           xl={2}
           >
@@ -61,6 +66,7 @@ const Contact = ({
           span={22}
           xl={22}
           lg={22}
+          md={22}
           xs={22}
           >
             <p style={{ color: "white" }}>{contactPhone}</p>
@@ -70,6 +76,7 @@ const Contact = ({
           span={2}
           xl={2}
           lg={2}
+          md={2}
           xs={2}
           >
             <Icon type="api" />
@@ -78,6 +85,7 @@ const Contact = ({
           span={22}
           xl={22}
           lg={22}
+          md={22}
           xs={22}
           >
             <p style={{ color: "white" }}>{location}</p>
@@ -87,6 +95,7 @@ const Contact = ({
           span={2}
           xs={2}
           lg={2}
+          md={2}
           xl={2}
           >
             <Icon type="schedule" />
@@ -95,16 +104,19 @@ const Contact = ({
           span={22}
           xl={22}
           lg={22}
+          md={22}
           xs={22}
           style={{display:"flex", justifyContent:"center"}}>
             <p style={{ color: "white" }}>{schedule}</p>
           </Col>
         </Row>
       </Col>
+      <Col xl={2} lg={1} md={2} xs={0} sm={0} />
       <Col
       span={10}
       xl={10}
       lg={10}
+      md={9}
       xs={24}
       style={{display:"flex", justifyContent:"center", alignContent:"center", alignItems:"center"}}>
 
@@ -114,6 +126,7 @@ const Contact = ({
       span={2}
       xl={2}
       lg={2}
+      md={2}
       xs={0}
       />
     </Row>

@@ -2,14 +2,14 @@
     z-index:5;
     color: white;
     display:flex;
-    justify-content:flex-end;
+    justify-content:center;
     height:100%;
     width:49%;
     margin-right: 5px;
     overflow:hidden;
     background: no-repeat;
     background-size: 50vw;
-    background-position: bottom;
+    background-position: left;
     background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/classic.jpg");
 }
 .modern-img {
@@ -50,15 +50,16 @@
     overflow:hidden;
 }
 
-.x3:hover {
+.x2:hover .x3 {
     opacity: 1;
-    color: white;
 }
+
 .x2:hover {
     opacity: 1;
     background-color:rgb(0,0,0, 0.3);
     color: white;
 }
+
 .modelHeader {
     font-size: 1.2rem;
     letter-spacing: 0.1em;

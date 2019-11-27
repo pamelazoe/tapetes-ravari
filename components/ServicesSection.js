@@ -13,13 +13,14 @@ const ServicesSection = ({
 }) => (
   <div className="service-section">
     <Row className="service-row" type="flex" justify="center" align="middle">
-      <Col span={2} xl={2} xs={1} />
-      <Col span={10} xl={10} xs={0} />
-      <Col className="services-header" span={10} xl={10} xs={22}>
+      <Col span={2} xl={2} md={2} xs={1} />
+      <Col span={10} xl={10} md={10} xs={0} />
+      <Col className="services-header" span={10} xl={10} md={10} xs={22}>
         <div className="header-section">{sectionHeader}</div>
         <Row type="flex" justify="end">
           <Col
             span={23}
+            md={24}
             push={6}
             style={{
               backgroundImage:
@@ -31,12 +32,12 @@ const ServicesSection = ({
           ></Col>
         </Row>
       </Col>
-      <Col span={2} xl={2} xs={1}></Col>
+      <Col span={2} xl={2} md={2} xs={1}/>
     </Row>
     <Row type="flex" justify="space-between" style={{ width: "100%" }}>
-      <Col span={2} xl={2} xs={0} />
+      <Col span={2} xl={2} md={2} xs={0} />
     {/************* Cards for Web *************/}
-      <Col span={20} xl={20} xs={0}className="services-cards-web">
+      <Col span={20} xl={20} md={20} xs={0}className="services-cards-web">
         <div className="square-container">
           <div className="square">
             <div className="content">
@@ -82,7 +83,7 @@ const ServicesSection = ({
         </div>
       </Col>
       {/************* Cards for Mobile *************/}
-      <Col xl={0} xs={20} className="services-cards-mobile">
+      <Col xl={0} md={0} xs={20} className="services-cards-mobile">
         <div className="square-container">
           <div className="square">
             <div className="content">
@@ -127,7 +128,7 @@ const ServicesSection = ({
           </div>
         </div>
       </Col>
-      <Col span={2} xl={2} xs={0}></Col>
+      <Col span={2} xl={2} md={2} xs={0}></Col>
     </Row>
   </div>
 );

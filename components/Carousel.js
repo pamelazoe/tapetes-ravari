@@ -52,7 +52,7 @@ class Slides extends Component {
     </div>
       <div className="carousel">
         <Carousel
-          autoplay="true"
+          autoplay="false"
           effect="fade"
           infinite="true"
           speed="2000"
