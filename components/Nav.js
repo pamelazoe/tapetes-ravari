@@ -32,8 +32,8 @@ class Nav extends React.Component {
                 justify="center"
                 align="middle"
               >
-                <Col span={2}></Col>
-                <Col span={10}>
+                <Col span={2} xl={2}/>
+                <Col span={10} xl={10}>
                   <Link href="/#contact">
                     <a>
                       <img
@@ -51,11 +51,12 @@ class Nav extends React.Component {
                 </Col>
                 <Col
                   span={10}
+                  xl={10}
                   style={{
                     display: "flex",
                     justifyContent: "flex-end",
                     background: "white",
-                    height:"100%"
+                    height: "100%"
                   }}
                 >
                   <Menu
@@ -68,37 +69,31 @@ class Nav extends React.Component {
                     }}
                   >
                     <Menu.Item key="home">
-                      {/* <a href="/" target="_blank" rel="noopener noreferrer"></a> */}
                       <Link href="/">
                         <a>INICIO</a>
                       </Link>
                     </Menu.Item>
                     <Menu.Item key="about">
-                      {/* <a href="/" target="_blank" rel="noopener noreferrer"></a> */}
-
                       <Link href="/about">
                         <a>NOSOTROS</a>
                       </Link>
                     </Menu.Item>
                     <Menu.Item key="services">
-                      {/* <a href="/" target="_blank" rel="noopener noreferrer"></a> */}
                       <Link href="/services">
                         <a>SERVICIOS</a>
                       </Link>
                     </Menu.Item>
                     <Menu.Item key="contact">
-                      {/* <a href="/" target="_blank" rel="noopener noreferrer"></a> */}
-                      <Link href="/#contact-section">
-                        <a href="/#contact-section">CONTACTO</a>
+                      <Link href="/contact">
+                        <a href="/contact">CONTACTO</a>
                       </Link>
                     </Menu.Item>
                   </Menu>
                 </Col>
-                <Col span={2}></Col>
+                <Col span={2} xl={2}></Col>
               </Row>
             </div>
           </Affix>
-          <style global jsx>{``}</style>
         </div>
         <div className="show-mobile-hide-desktop">
           <Affix>
@@ -149,7 +144,7 @@ class Nav extends React.Component {
                         <a href="/services">SERVICIOS</a>
                       </Menu.Item>
                       <Menu.Item key="contact">
-                        <a href="/#contact-section">CONTACTO</a>
+                        <a href="/contact">CONTACTO</a>
                       </Menu.Item>
                     </Menu>
                   </Drawer>

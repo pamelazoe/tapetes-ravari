@@ -8,12 +8,12 @@ const ExtraInfo = ({headerInfo, contentInfo, li1, li2, li3, li4, li5}) => (
             <Col
             span={2}
             xl={2}
-            xs={1}
+            xs={0}
             />
             <Col
             span={10}
             xl={10}
-            xs={17}
+            xs={24}
             >
             <div className="info-head">{headerInfo}</div>
             <Row>
@@ -50,7 +50,7 @@ const ExtraInfo = ({headerInfo, contentInfo, li1, li2, li3, li4, li5}) => (
             <Col
             span={10}
             xl={10}
-            xs={6}
+            xs={24}
             style={{overflow:"hidden"}}>
             <Row className="extra-info-image" type="flex" align="middle" justify="center">
                 <img src="https://travari.s3-us-west-2.amazonaws.com/images/mosaic-rug.jpg"></img>

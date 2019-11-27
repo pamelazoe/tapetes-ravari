@@ -42,7 +42,7 @@ export default class Contact extends React.Component {
             phone={this.props.topBanner.phone}
             email={this.props.topBanner.email}
         >
-   <h1>Contacto</h1>
+   {/* <h1>Contacto</h1> */}
    </Layout>
    <BackTop/>
     
