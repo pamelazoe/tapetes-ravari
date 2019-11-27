@@ -3,14 +3,17 @@ import {Col, Row} from 'antd';
 import "../styles/catalog.css"
 
 const Catalog = ({cat1, cat2}) => (
-   //<div className="show-desktop-hide-mobile">
+    <div className="catalog-section">
     <Row gutter={24} type="flex" justify="center" align="middle"
-    style={{margin:"3rem 0", width:"100%", height:"25vmax", overflow:"hidden"}}>
+    >
         <Col xl={2} xs={0} md={2}/>
         <Col xl={20}
         xs={20}
         md={20}
-        style={{height:"100%", display:"flex", justifyContent:"center", padding:"0", overflow:"hidden"}}>
+        style={{
+            height:"100%", 
+            display:"flex", justifyContent:"center", padding:"0", overflow:"hidden"}}
+        >
             <div className="classic-img">
                 <div className="x2">
                     <div className="x3">
@@ -36,7 +39,7 @@ const Catalog = ({cat1, cat2}) => (
         xs={0}
         ></Col>
     </Row>
-    //</div>
+    </div>
 )
 
 export default Catalog
