@@ -34,13 +34,6 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
             <Col
               span={23}
               pull={8}
-              style={{
-                // backgroundImage:
-                //   "-webkit-linear-gradient(0deg, #7e764f 45%, #e8e7e1 45%)",
-                // minHeight: "4px",
-                // maxHeight: " 4px",
-                // width: "95%"
-              }}
             ></Col>
           </Row>
         </Col>
@@ -97,23 +90,73 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
       <Col xl={2} xs={0}></Col>
     </Row>
     <Row>
-      <Col span={2}></Col>
-      <Col span={12}>
+      <Col
+      span={2}
+      xl={2}
+      xs={0}
+      />
+      <Col
+      span={12}
+      xl={12}
+      xs={24}
+      >
         <Col
+          className="img-container"
           span={12}
-          style={{ overflow: "hidden", width: "45%", height: "25rem" }}
+          xl={12}
+          xs={24}
         >
-          <img
-            style={{ height: "33rem", position: "relative", right: "13rem" }}
-            src="https://travari.s3-us-west-2.amazonaws.com/images/sustainable.jpg"
+          <img src="https://travari.s3-us-west-2.amazonaws.com/images/sustainable.jpg"
           ></img>
         </Col>
-        <Col span={12} style={{ padding: "15px" }}>
+        <Col
+        className="text-content1"
+        span={12}
+        xl={12}
+        xs={24}
+        >
           <p>{text1}</p>
           <p>{text2}</p>
         </Col>
       </Col>
-      <Col span={8} style={{ padding: "15px 0" }}>
+      <Col
+      className="img-container2"
+      xs={24}
+      xl={0}
+      gd={0}
+      sm={0}
+      md={0}
+      xxl={0}
+      >
+        <Col
+        xs={12}
+        xl={0}
+        gd={0}
+        sm={0}
+        md={0}
+        xxl={0}
+        >
+          <img id="img-left" src="https://travari.s3-us-west-2.amazonaws.com/images/central-rug.jpg" />
+        </Col>
+        <Col
+        xs={12}
+        xl={0}
+        gd={0}
+        sm={0}
+        md={0}
+        xxl={0}
+        >
+          <img id="img-right" src="https://travari.s3-us-west-2.amazonaws.com/images/large-table-rug.jpg" />
+        </Col>
+
+      </Col>
+      <Col
+      className="text-secondary"
+      span={8}
+      xl={8}
+      xs={24}
+      //style={{ padding: "15px 15px" }}
+      >
         <p>{text3}</p>
         <div className="button-div">
           <Button
@@ -131,7 +174,11 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
           </Button>
         </div>
       </Col>
-      <Col span={2}></Col>
+      <Col
+      span={2}
+      xl={2}
+      xs={0}
+      />
     </Row>
   </div>
 );

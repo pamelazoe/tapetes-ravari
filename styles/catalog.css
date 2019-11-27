@@ -8,7 +8,7 @@
     margin-right: 5px;
     overflow:hidden;
     background: no-repeat;
-    background-size: 40rem;
+    background-size: 50vw;
     background-position: bottom;
     background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/classic.jpg");
 }
@@ -22,7 +22,7 @@
     margin-left: 5px;
     overflow:hidden;
     background: no-repeat;
-    background-size: 40rem;
+    background-size: 50vw;
     background-position: left;
     background-image: url("https://travari.s3-us-west-2.amazonaws.com/images/mata-pod-dywan.jpg");
 }

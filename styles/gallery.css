@@ -62,9 +62,9 @@
     align-items:center;
   }
  
-  a:link, a:visited, a:hover, a:active {
+  .ant-col.ant-col-20.ant-col-xs-20.ant-col-xl-20 > .add > a:link, a:visited, a:hover, a:active {
     text-decoration: none;
-    color:white;
+    color:rgb(126, 118, 79);
   }
 
   .square .content a {

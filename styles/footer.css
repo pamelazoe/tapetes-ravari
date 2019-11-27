@@ -119,7 +119,7 @@ footer.footer-wraper.ant-layout-footer {
     align-items: center;
     margin: 15px;
 }
-.legal a {
+.ant-col.ant-col-14.by-legal-terms.ant-col-xs-24.ant-col-xl-14 > .legal > a {
     display: flex;
     justify-content: center;
     color: white;

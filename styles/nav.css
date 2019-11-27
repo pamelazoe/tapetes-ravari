@@ -9,6 +9,18 @@ html {
     margin: 0;
     padding: 0;
 }
+::selection {
+    color: transparent;
+    background: transparent;
+  }
+  ::-moz-selection {
+    color: transparent;
+    background: transparent;
+  }
+  ::selection {
+    color: #fff;
+    background: #1890ff;
+  }
  @media (max-width: 576px){
      .show-desktop-hide-mobile {
          width: 0;

@@ -252,7 +252,7 @@
       width: 11rem;
       margin: 30px 40px 0 0;
       color: white;
-      font-size: 2vh;
+      font-size: 1vw;
       letter-spacing: 0.1em;
       border:none;
  }
@@ -324,14 +324,15 @@
       height: 100%;
  }
   .ant-carousel .slick-dots-bottom {
-      bottom: 60px;
+      margin:2rem 0 1rem 0;
+      bottom: 90px;
       z-index: 100;
  }
   .ant-carousel .slick-dots li button {
       width: 22px;
       height: 22px;
       border-radius: 100%;
-      margin: 0px 8px;
+      margin:2rem 8px 2rem 8px;
  }
   .ant-carousel .slick-dots li button:hover, .ant-carousel .slick-dots li button:focus {
       opacity: 0.75;

@@ -1,0 +1,173 @@
+  .services-cards-web >.square-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+  .services-cards-web > .square-container > .square {
+    position: relative;
+    flex-basis: calc(31.5% - 10px);
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .square::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  .services-cards-web > .square-container > .square-content > .content > h3 {
+   font-size: 1.2rem;
+   font-weight: 700;
+  }
+  .services-cards-web > .square-container > .square > .content > img {
+    height: auto;
+    position: absolute;
+    right: 0px;
+    min-width: 170%;
+  }
+
+  .square-content {
+    position: relative;
+    width: calc(31.5% - 10px);
+    height: 12rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .square-content::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  .square-content > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .divider {
+    display: block;
+    clear: both;
+    width: 30%;
+    min-width: 30%;
+    height: 1px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+    border: solid 1.5px rgb(126, 118, 79);
+  }
+  .ant-col.ant-col-10.services-header.ant-col-xs-24.ant-col-xl-10 {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+  .header-section{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2.2rem;
+    font-size: 2rem;
+    color: #363636;
+    font-weight: 700;
+  }
+  .ant-row-flex.ant-row-flex-center.ant-row-flex-middle.service-row {
+    margin-top: 4rem;
+    width: 100%;
+    height: 8rem;
+    overflow: hidden;
+  }
+  @media (max-width: 576px){
+    .services-cards-web {
+        display: none;
+    }
+    .header-section {
+        font-size: 1.7rem;
+        font-weight: 700;
+        letter-spacing: 0.05rem;
+        margin: 5px 0 15px 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+        color: #363636;
+    }
+    .divider {
+        display: block;
+        clear: both;
+        width: 30%;
+        min-width: 30%;
+        height: 1px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 25px;
+        border: solid 1.5px rgb(126, 118, 79);
+      }
+      .ant-row-flex.ant-row-flex-center.ant-row-flex-middle.service-row {
+        margin-top: 1rem;
+        width: 100%;
+        height: 5rem;
+        overflow: hidden;
+      }
+      .services-cards-mobile >.square-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
+      .services-cards-mobile > .square-container > .square {
+        position: relative;
+        flex-basis: 100%;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+      .square::before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+      }
+      .services-cards-mobile > .square-container > .square-content > .content > h3 {
+       font-size: 1.2rem;
+       font-weight: 700;
+      }
+      .services-cards-mobile > .square-container > .square > .content > img {
+        height: auto;
+        position: absolute;
+        right: 0px;
+        min-width: 170%;
+      }
+      .square-content {
+        position: relative;
+        width: 100%;
+        height: 12rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+      .square-content::before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+      }
+      .square-content > .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+  }
