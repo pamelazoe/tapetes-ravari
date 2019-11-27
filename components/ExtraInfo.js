@@ -9,14 +9,14 @@ const ExtraInfo = ({headerInfo, contentInfo, li1, li2, li3, li4, li5}) => (
             span={2}
             xl={2}
             md={2}
-            xs={0}
+            xs={2}
             />
             <Col
             className="head-extra-info"
             span={10}
             xl={10}
             md={10}
-            xs={24}
+            xs={20}
             >
             <div className="info-head">{headerInfo}</div>
             <Row>
@@ -66,7 +66,7 @@ const ExtraInfo = ({headerInfo, contentInfo, li1, li2, li3, li4, li5}) => (
             span={2}
             xl={2}
             md={2}
-            xs={0}
+            xs={2}
             />
         </Row>
     </div>

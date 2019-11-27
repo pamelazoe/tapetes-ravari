@@ -20,7 +20,7 @@ const Contact = ({
       xl={3}
       md={2}
       lg={3}
-      xs={0}
+      xs={2}
       style={{backgroundColor:"transparent"}}
       />
       <Col
@@ -28,7 +28,7 @@ const Contact = ({
         xl={7}
         lg={8}
         md={9}
-        xs={24}
+        xs={20}
         // style={{
         //   padding: "0 6rem",
         //   height: "100%",
@@ -111,13 +111,14 @@ const Contact = ({
           </Col>
         </Row>
       </Col>
-      <Col xl={2} lg={1} md={2} xs={0} sm={0} />
+      <Col xl={2} lg={1} md={2} xs={2} sm={0} />
+      <Col xl={0} lg={0} md={0} xs={3} sm={0} />
       <Col
       span={10}
       xl={10}
       lg={10}
       md={9}
-      xs={24}
+      xs={18}
       style={{display:"flex", justifyContent:"center", alignContent:"center", alignItems:"center"}}>
 
         <ContactForm />
@@ -127,7 +128,7 @@ const Contact = ({
       xl={2}
       lg={2}
       md={2}
-      xs={0}
+      xs={3}
       />
     </Row>
     <style jsx>{`

@@ -56,6 +56,11 @@ const TopBanner = ({ phone, email }) => (
         padding:0;
         margin:0 5px;
       }
+      @media (max-width: 576px){
+        .join2 a p {
+          font-size: 0.85rem;
+        }
+      }
     `}</style>
 </div>
 )
