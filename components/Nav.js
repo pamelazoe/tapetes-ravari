@@ -140,16 +140,16 @@ class Nav extends React.Component {
                   >
                     <Menu mode="vertical-right" closable="true">
                       <Menu.Item key="home">
-                        <a href="">INICIO</a>
+                        <a href="/">INICIO</a>
                       </Menu.Item>
                       <Menu.Item key="about">
-                        <a href="">NOSOTROS</a>
+                        <a href="/about">NOSOTROS</a>
                       </Menu.Item>
                       <Menu.Item key="services">
-                        <a href="">SERVICIOS</a>
+                        <a href="/services">SERVICIOS</a>
                       </Menu.Item>
                       <Menu.Item key="contact">
-                        <a href="">CONTACTO</a>
+                        <a href="/#contact-section">CONTACTO</a>
                       </Menu.Item>
                     </Menu>
                   </Drawer>

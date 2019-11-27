@@ -24,8 +24,8 @@ const ServicesSection = ({
             style={{
               backgroundImage:
                 "-webkit-linear-gradient(0deg, #e8e7e1 55%, #7e764f 55%)",
-              minHeight: "4px",
-              maxHeight: " 4px",
+              minHeight: "2px",
+              maxHeight: "2px",
               width: "76%"
             }}
           ></Col>

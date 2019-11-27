@@ -26,11 +26,17 @@
 #contact-section {
     background-color: black;
     color: white;
-    height: 100%;
+    height: 28rem;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     padding: 3rem 0 2rem 0;
+}
+.contact-title h1 {
+    font-size: 2.2rem;
+}
+.contact-title p {
+    font-size: 0.9rem;
 }
 }

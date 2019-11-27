@@ -115,6 +115,9 @@ html {
      .ant-menu-item-active {
          background: black;
     }
+    li.ant-menu-item a {
+        color: white;
+    }
 }
  @media (min-width: 576px) {
      .show-mobile-hide-desktop {

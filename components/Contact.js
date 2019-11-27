@@ -14,7 +14,7 @@ const Contact = ({
     id="contact-section"
     //style={{ backgroundColor: "black", color: "white", height:"30rem", display:"flex", justifyContent:"center", alignItems:"center", overflow:"hidden" }}
   >
-    <Row type="flex" justify="center">
+    <Row type="flex" justify="center" align="middle">
       <Col
       //span={2}
       xl={2}
@@ -126,11 +126,7 @@ const Contact = ({
         }
         h1 {
           color:white;
-        }
-        p {
-          font-size: .8rem;
-        }
-        
+        }        
       `}</style>
   </div>
 );

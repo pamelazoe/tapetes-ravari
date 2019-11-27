@@ -74,7 +74,8 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 2.2rem;
-    font-size: 2rem;
+    font-size: 2.1rem;
+    letter-spacing: 0.05rem;
     color: #363636;
     font-weight: 700;
   }
@@ -96,7 +97,6 @@
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        margin-bottom: 1rem;
         color: #363636;
     }
     .divider {
@@ -112,7 +112,7 @@
         border: solid 1.5px rgb(126, 118, 79);
       }
       .ant-row-flex.ant-row-flex-center.ant-row-flex-middle.service-row {
-        margin-top: 1rem;
+        margin-top: 0;
         width: 100%;
         height: 5rem;
         overflow: hidden;
