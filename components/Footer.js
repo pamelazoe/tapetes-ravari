@@ -1,11 +1,10 @@
 import React from "react";
 import { Row, Col, Layout, Divider, Icon } from "antd";
 import "../styles/footer.css";
-import { relative } from "path";
 
 const { Footer, Content } = Layout;
 
-const PageFooter = ({ by, legal, terms }) => (
+const PageFooter = ({ by, legal, terms, fblink, fblogo }) => (
   <footer>
     <Footer className="footer-wraper">
       <Row type="flex" justify="space-between" align="middle">
@@ -13,8 +12,8 @@ const PageFooter = ({ by, legal, terms }) => (
           span={8}
         />
         <Col className="socialmedia-icons" span={8}>
-          <a href="https://www.facebook.com/tapetesravari/">
-            <img src="https://travari.s3-us-west-2.amazonaws.com/images/fblogo.png" />
+          <a href={fblink}>
+            <img src={require(fblogo)} />
           </a>
           <a href="https://www.instagram.com/tapetesravari/">
             <img src="https://travari.s3-us-west-2.amazonaws.com/images/instalogo.png" />

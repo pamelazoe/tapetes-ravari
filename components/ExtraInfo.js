@@ -27,9 +27,9 @@ const ExtraInfo = ({headerInfo, contentInfo, li1, li2, li3, li4, li5}) => (
               pull={8}
               style={{
                 backgroundImage:
-                  "-webkit-linear-gradient(0deg, #7e764f 45%, #e8e7e1 45%)",
-                minHeight: "4px",
-                maxHeight: " 4px",
+                  "-webkit-linear-gradient(0deg, rgb(126, 118, 79) 60%, rgb(232, 231, 225) 45%)",
+                minHeight: "2px",
+                maxHeight: "2px",
                 width:"80%",
                
               }}
@@ -58,7 +58,7 @@ const ExtraInfo = ({headerInfo, contentInfo, li1, li2, li3, li4, li5}) => (
             xs={24}
             style={{overflow:"hidden"}}>
             <Row className="extra-info-image" type="flex" align="middle" justify="center">
-                <img src="https://travari.s3-us-west-2.amazonaws.com/images/mosaic-rug.jpg"></img>
+                <img src="https://travari.s3-us-west-2.amazonaws.com/images/mosaic-rug.jpg"/>
                 </Row>
             </Col>
             

@@ -51,7 +51,9 @@ export default class Home extends React.Component {
       footer: {
         by: "By Guaostudio",
         legal: "Política de Privacidad",
-        terms: "Términos y Condiciones"
+        terms: "Términos y Condiciones",
+        fblink: "https://www.facebook.com/tapetesravari/",
+        fblogo: "https://travari.s3-us-west-2.amazonaws.com/images/fblogo.png",
       },
       topBanner: {
         phone: "(55) 5555 5555",

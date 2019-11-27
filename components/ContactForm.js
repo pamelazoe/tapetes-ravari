@@ -15,7 +15,6 @@ class ContactForm extends React.Component {
           xl={12}
           lg={12}
           xs={24}
-          //style={{paddingRight:"5px"}}
           >
           <Row>
             Nombre
@@ -57,7 +56,7 @@ class ContactForm extends React.Component {
         </Form.Item>
         </Col>
         </Row>
-        <Row style={{color:"white"}}>
+        <Row>
           <Col span={24}>
           <Row>
             Mensaje
@@ -68,16 +67,16 @@ class ContactForm extends React.Component {
         </Form.Item>
         </Col>
         </Row>
-        <Row style={{color:"white"}}>
+        <Row>
         <Col
         span={12}
         xl={12}
         lg={12}
         xs={24}
         >
-        
           <Form.Item>
-          <Button className="send-form" htmlType="submit" style={{backgroundColor:"#7E764F", borderColor:"#7E764F", color:"white", width:"100%"}}>
+          <Button
+          className="send-form" htmlType="submit">
             Enviar
           </Button>
         </Form.Item>
