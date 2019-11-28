@@ -95,6 +95,7 @@ export default class Home extends React.Component {
   }
 
   render() {
+    console.log("index")
     return (
       <div 
       style={{display:"flex", flexFlow:"column"}}

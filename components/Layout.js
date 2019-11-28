@@ -6,7 +6,7 @@ import Contact from './Contact'
 import { BackTop } from "antd";
 import Head from "next/head"
 import "../styles/index.css"
-
+console.log("layout")
 const Layout = ({children, phone, email, home, about, services, contact, by, legal, terms,
                   contactTitle, contactContent, contactPhone, location, schedule}) => (    
   <div >

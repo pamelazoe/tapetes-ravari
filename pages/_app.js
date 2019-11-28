@@ -18,12 +18,12 @@ export default class MyApp extends App {
   }
 
   render () {
-    console.log("hello")
+    console.log("app", pageProps)
     const { Component, pageProps } = this.props
-
     return (
       <Container>
         <Layout {...pageProps}>
+          
           <Component {...pageProps} />
         </Layout>
       </Container>
