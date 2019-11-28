@@ -18,7 +18,7 @@ const AboutSection = ({ title, subtitle, text1, text2, text3, rpanelimg1 }) => (
       </Col>
       <Col className="img-right-1" xl={4} md={0} xs={0}>
         <div className="img1-right-panel">
-          <img src={rpanelimg1} />
+          <img src="https://travari.s3-us-west-2.amazonaws.com/images/central-rug.jpg" />
         </div>
       </Col>
       <Col className="img-right-2" xl={4} md={6} xs={0}>
@@ -32,7 +32,7 @@ const AboutSection = ({ title, subtitle, text1, text2, text3, rpanelimg1 }) => (
       <Col span={2} xl={2} md={2} xs={0} />
       <Col span={12} xl={12} md={14} xs={24}>
         <Col className="img-container" span={12} xl={12} md={12} xs={24}>
-          <img src="https://travari.s3-us-west-2.amazonaws.com/images/sustainable.jpg"></img>
+          <img src="https://travari.s3-us-west-2.amazonaws.com/images/sustainable.jpg" />
         </Col>
         <Col className="text-content1" span={12} xl={12} md={12} xs={24}>
           <p>{text1}</p>
