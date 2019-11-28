@@ -18,7 +18,7 @@ export default class MyApp extends App {
   }
 
   render () {
-    console.log("app", pageProps)
+    console.log("app")
     const { Component, pageProps } = this.props
     return (
       <Container>
