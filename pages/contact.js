@@ -30,16 +30,16 @@ export default class Contact extends React.Component {
       return (
           <div>
           <Layout
-            contactTitle={this.props.contact.contactTitle}
-            contactContent={this.props.contact.contactContent}
-            contactPhone={this.props.contact.contactPhone}
-            location={this.props.contact.location}
-            schedule={this.props.contact.schedule}
-            by={this.props.footer.by}
-            legal={this.props.footer.legal}
-            terms={this.props.footer.terms}
-            phone={this.props.topBanner.phone}
-            email={this.props.topBanner.email}
+            // contactTitle={this.props.contact.contactTitle}
+            // contactContent={this.props.contact.contactContent}
+            // contactPhone={this.props.contact.contactPhone}
+            // location={this.props.contact.location}
+            // schedule={this.props.contact.schedule}
+            // by={this.props.footer.by}
+            // legal={this.props.footer.legal}
+            // terms={this.props.footer.terms}
+            // phone={this.props.topBanner.phone}
+            // email={this.props.topBanner.email}
         >
    <h1>Contacto</h1>
    </Layout>
