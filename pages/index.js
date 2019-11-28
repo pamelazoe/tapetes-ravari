@@ -1,14 +1,8 @@
 import Layout from "../components/Layout";
-import Link from "next/link";
 import Carousel from "../components/Carousel";
-import PageFooter from "../components/Footer";
-import Contact from "../components/Contact";
 import Gallery from "../components/Gallery";
-import { BackTop } from "antd";
-import Nav from "../components/Nav";
 import Catalog from "../components/Catalog";
 import ServicesSection from "../components/ServicesSection";
-import fetch from "isomorphic-unfetch";
 import About from "../components/About"
 import ExtraInfo from "../components/ExtraInfo"
 
@@ -52,8 +46,8 @@ export default class Home extends React.Component {
         by: "By Guaostudio",
         legal: "Política de Privacidad",
         terms: "Términos y Condiciones",
-        fblink: "https://www.facebook.com/tapetesravari/",
-        fblogo: "https://travari.s3-us-west-2.amazonaws.com/images/fblogo.png",
+        fbLink: "https://www.facebook.com/tapetesravari/",
+        instaLink: "https://travari.s3-us-west-2.amazonaws.com/images/fblogo.png",
       },
       topBanner: {
         phone: "(55) 5555 5555",
@@ -78,7 +72,8 @@ export default class Home extends React.Component {
         subtitle: "Más de 40 años de experiencia",
         text1: "That, out there. That's my grave. On one of our adventures Rick and I basically destroyed the whole world. So we bailed on that reality and we came to this one. Because in this one the world wasn't destroyed. And in this one, we were dead. So we came here a-a-and we buried ourselves and we took their place.",
         text2: "And every morning, Summer, I eat breakfast 2 I've replaced them both as the de facto patriarch of your family and your universe. Your mom wouldn't have accepted me if I came home without you and your sister, so now you know the real reason I rescued you. I just took over the family, Morty! ",
-        text3: "Shut the fuck up about moonmen! Hello Jerry, come to rub my face in urine again? Hey listen, you know, if we're all bored over here, wouldn't the common denominator be you? Yo! What up my glip glops! Nice to wheat you! Oh no. I'm late to class, bitch. And that's the wayyy, the news goes! Meeseeks were not born into this world fumbling for meaning, Jerry! Morty!"
+        text3: "Shut the fuck up about moonmen! Hello Jerry, come to rub my face in urine again? Hey listen, you know, if we're all bored over here, wouldn't the common denominator be you? Yo! What up my glip glops! Nice to wheat you! Oh no. I'm late to class, bitch. And that's the wayyy, the news goes! Meeseeks were not born into this world fumbling for meaning, Jerry! Morty!",
+        rpanelimg1: "https://travari.s3-us-west-2.amazonaws.com/images/central-rug.jpg",
       },
       extraInfo: {
         headerInfo:"Información extra",
@@ -104,7 +99,7 @@ export default class Home extends React.Component {
       <div 
       style={{display:"flex", flexFlow:"column"}}
       >
-        <Layout
+        <Layout 
           contactTitle={this.props.contact.contactTitle}
           contactContent={this.props.contact.contactContent}
           contactPhone={this.props.contact.contactPhone}

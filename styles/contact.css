@@ -15,11 +15,15 @@
         overflow: hidden;
         padding: 2rem 0 1.5rem 0;
    }
+   .contact-panel {
+       margin: 20px 0 35px 0;
+   }
    .contact-panel > .ant-row > p {
     color: white;
     }
     .contact-panel p {
         color: white;
+        font-size: 0.7rem;
     }
     .contact-panel h1 {
         color: white;

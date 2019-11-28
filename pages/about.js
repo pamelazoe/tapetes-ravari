@@ -44,17 +44,10 @@ export default class About extends React.Component {
         >
    <h1>Nosotros</h1>
    </Layout>
-   <BackTop/>
-    
-   
-   <style jsx>{`
-        `}</style>
-  
    </div>
       )
     }
   }
-
 
 
 

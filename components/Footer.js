@@ -4,7 +4,7 @@ import "../styles/footer.css";
 
 const { Footer, Content } = Layout;
 
-const PageFooter = ({ by, legal, terms, fblink, fblogo }) => (
+const PageFooter = ({ by, legal, terms, fbLink, instalink }) => (
   <footer>
     <Footer className="footer-wraper">
       <Row type="flex" justify="space-between" align="middle">
@@ -12,10 +12,10 @@ const PageFooter = ({ by, legal, terms, fblink, fblogo }) => (
           span={8}
         />
         <Col className="socialmedia-icons" span={8}>
-          <a href={fblink}>
-            <img src={require(fblogo)} />
+          <a href={fbLink}>
+            <img src="https://travari.s3-us-west-2.amazonaws.com/images/fblogo.png" />
           </a>
-          <a href="https://www.instagram.com/tapetesravari/">
+          <a href={instalink}>
             <img src="https://travari.s3-us-west-2.amazonaws.com/images/instalogo.png" />
           </a>
         </Col>
@@ -29,7 +29,7 @@ const PageFooter = ({ by, legal, terms, fblink, fblogo }) => (
             alt=""
           ></img>
         </Col>
-        <Col span={8}></Col>
+        <Col span={8} xl={8} />
       </Row>
       <Row type="flex" justify="center" align="middle"
       style={{position:"relative", width:"100%"}}>

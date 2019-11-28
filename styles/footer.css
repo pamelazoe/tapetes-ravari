@@ -88,6 +88,10 @@ footer.footer-wraper.ant-layout-footer {
     flex-direction: column;
     background-image: url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
 }
+.link-text >  a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color:white;
+}
 .ant-col.ant-col-8.socialmedia-icons {
     display: flex;
     justify-content: center;

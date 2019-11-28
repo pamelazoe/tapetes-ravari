@@ -30,7 +30,7 @@ export default class Servces extends React.Component {
     render() {
       return (
           <div>
-          <Layout
+          <Layout 
             contactTitle={this.props.contact.contactTitle}
             contactContent={this.props.contact.contactContent}
             contactPhone={this.props.contact.contactPhone}

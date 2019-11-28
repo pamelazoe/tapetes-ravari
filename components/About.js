@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row, Button } from "antd";
 import "../styles/about.css";
 
-const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
+const AboutSection = ({ title, subtitle, text1, text2, text3, rpanelimg1 }) => (
   <div className="about">
     <Row className="about-header" type="flex" justify="center" align="middle">
       <Col xl={2} md={2} xs={0}></Col>
@@ -18,7 +18,7 @@ const AboutSection = ({ title, subtitle, text1, text2, text3 }) => (
       </Col>
       <Col className="img-right-1" xl={4} md={0} xs={0}>
         <div className="img1-right-panel">
-          <img src="https://travari.s3-us-west-2.amazonaws.com/images/central-rug.jpg" />
+          <img src={rpanelimg1} />
         </div>
       </Col>
       <Col className="img-right-2" xl={4} md={6} xs={0}>

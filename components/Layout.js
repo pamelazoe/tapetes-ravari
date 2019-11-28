@@ -4,13 +4,18 @@ import TopBanner from './TopBanner'
 import PageFooter from './Footer'
 import Contact from './Contact'
 import { BackTop } from "antd";
+import Head from "next/head"
 import "../styles/index.css"
 
 const Layout = ({children, phone, email, home, about, services, contact, by, legal, terms,
                   contactTitle, contactContent, contactPhone, location, schedule}) => (    
   <div >
+    <Head>
+      <title>Tapetes Ravari</title>
+    </Head>
     <TopBanner phone={phone} email={email} />
     <Nav home={home} about={about} services={services} contact={contact} />
+   
       {children} 
       <Contact 
       contactTitle={contactTitle}
