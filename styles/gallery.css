@@ -11,7 +11,7 @@
         justify-content: flex-end;
     }
     .gallery-section {
-        margin-top: 3rem;
+        margin-top: 0.6rem;
     }
 }
 @media (min-width: 577px){

@@ -18,6 +18,7 @@ class Slides extends Component {
           >
             <Col xs={0} md={0} gd={0} xl={1} />
             <Col
+              className="overlay-position"
               xs={24}
               md={24}
               gd={24}

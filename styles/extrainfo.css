@@ -38,6 +38,7 @@
     .extra-info-image {
         display: flex;
         justify-content: center;
+        height: 6rem;
     }
     .extra-info-image > img {
         height: 16rem;

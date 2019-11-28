@@ -222,6 +222,14 @@
         letter-spacing: 0.06em;
         font-weight: 600;
    }
+   .overlay-content > .overlay-position {
+        display: flex;
+        box-sizing: border-box;
+        flex-flow: column;
+        justify-content: center;
+        position: relative;
+        top: -5vmin;
+   }
     .sub-header {
         display: flex;
         justify-content: flex-start;
