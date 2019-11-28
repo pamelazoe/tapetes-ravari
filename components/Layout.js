@@ -18,11 +18,11 @@ const Layout = ({children, phone, email, home, about, services, contact, by, leg
    
       {children} 
       <Contact 
-      contactTitle={contactTitle}
-      contactContent={contactContent}
-      contactPhone={contactPhone}
-      location={location}
-      schedule={schedule}
+      // contactTitle={contactTitle}
+      // contactContent={contactContent}
+      // contactPhone={contactPhone}
+      // location={location}
+      // schedule={schedule}
     />
       <PageFooter 
       by={by} legal={legal} terms={terms}
