@@ -95,12 +95,11 @@ export default class Home extends React.Component {
   }
 
   render() {
-    console.log("index")
     return (
       <div 
       style={{display:"flex", flexFlow:"column"}}
       >
-        {/* <Layout 
+        <Layout 
           contactTitle={this.props.contact.contactTitle}
           contactContent={this.props.contact.contactContent}
           contactPhone={this.props.contact.contactPhone}
@@ -111,7 +110,8 @@ export default class Home extends React.Component {
           terms={this.props.footer.terms}
           phone={this.props.topBanner.phone}
           email={this.props.topBanner.email}
-        > */}
+        >
+
           <Carousel
             img1={this.props.carousel.img1}
             img2={this.props.carousel.img2}
@@ -158,7 +158,7 @@ export default class Home extends React.Component {
           thmb4={this.props.gallery.thumb4}
           thmb5={this.props.gallery.thumb5}
           />
-        {/* </Layout> */}
+        </Layout>
         <style  jsx>{`
         `}</style>
       </div>

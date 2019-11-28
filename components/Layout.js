@@ -14,8 +14,7 @@ const Layout = ({children, phone, email, home, about, services, contact, by, leg
       <title>Tapetes Ravari</title>
     </Head>
     <TopBanner phone={phone} email={email} />
-    <Nav home={home} about={about} services={services} contact={contact} />
-   
+    <Nav home={home} about={about} services={services} contact={contact} />   
       {children} 
       <Contact 
       contactTitle={contactTitle}
