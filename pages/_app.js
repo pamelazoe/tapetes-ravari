@@ -6,8 +6,7 @@ import Layout from '../components/Layout'
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = { 
-      static getInitialProps() {
-        return {
+      
           overlay: {
             line1: "La mejor calidad",
             line2: "para tu hogar",
@@ -87,8 +86,6 @@ export default class MyApp extends App {
             thmb4:"https://instagram.fgdl3-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.179.1440.1440a/s640x640/69596518_387907098516664_8587229336592167709_n.jpg?_nc_ht=instagram.fgdl3-1.fna.fbcdn.net&_nc_cat=104&oh=f7a9087bb89bb0fff1da887f0b35f853&oe=5E4EF913",
             thmb5:"https://instagram.fgdl3-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.175.1406.1406a/s640x640/67793293_405809076742151_6086601951845881906_n.jpg?_nc_ht=instagram.fgdl3-1.fna.fbcdn.net&_nc_cat=111&oh=502c8bd57a05a5103ea1de344a9865ff&oe=5E6749E2"
           }
-        }
-      }
      }
     
     if (Component.getInitialProps) {
