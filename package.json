@@ -25,7 +25,7 @@
     "react-dom": "^16.13.1",
     "react-responsive-gallery": "^1.2.1",
     "react-slick": "^0.25.2",
-    "serialize-javascript": "^2.1.2",
+    "serialize-javascript": "^3.1.0",
     "slick-carousel": "^1.8.1",
     "url-loader": "^2.3.0"
   },
