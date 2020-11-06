@@ -16,11 +16,9 @@ class Slides extends Component {
             justify='center'
             align='middle'
           >
-            <Col xs={0} md={0} gd={0} xl={1} />
-            <Col className='overlay-position' xs={24} md={24} gd={24} xl={22}>
-              <div className='main-header'>
-                {this.props.line1.toUpperCase()}
-              </div>
+            <Col xs={0} md={3} gd={3} xl={3} />
+            <Col className='overlay-position' xs={24} md={9} gd={9} xl={9}>
+              <div className='header'>{this.props.line1.toUpperCase()}</div>
               <div className='sub-header'>{this.props.line2.toUpperCase()}</div>
               <div className='text-content'>{this.props.text}</div>
               <div className='overlay-buttons'>
@@ -32,7 +30,8 @@ class Slides extends Component {
                 </Button>
               </div>
             </Col>
-            <Col xs={0} md={0} gd={0} xl={1} />
+            <Col xs={0} md={9} gd={9} xl={9} />
+            <Col xs={0} md={3} gd={3} xl={3} />
           </Row>
         </div>
         <div className='carousel'>
